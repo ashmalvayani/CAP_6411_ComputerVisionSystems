@@ -1,0 +1,5 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+[W ProcessGroupNCCL.cpp:1569] Rank 0 using best-guess GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+slurmstepd: error: *** JOB 289699 ON c3-6 CANCELLED AT 2025-09-04T18:42:45 ***

@@ -1,0 +1,72 @@
+CUDA_VISIBLE_DEVICES=
+Thu Sep  4 14:41:08 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Quadro RTX 6000                Off |   00000000:3B:00.0 Off |                  Off |
+| 33%   34C    P8             14W /  260W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Using device: cuda
+loading annotations into memory...
+Done (t=0.79s)
+creating index...
+index created!
+Loaded COCO val2017: 5000 images
+Loaded torchvision Faster R-CNN (pretrained on COCO).
+loading annotations into memory...
+Done (t=0.62s)
+creating index...
+index created!
+Running inference...
+Saved detections -> Output/FasterRCNN/fasterrcnn_test_predictions.json
+Loading and preparing results...
+DONE (t=0.53s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=22.90s).
+Accumulating evaluation results...
+DONE (t=4.64s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.370
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.585
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.398
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.211
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.482
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.307
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.485
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.509
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.315
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.647
+[Fixed @ IoU=0.50, score>=0.50] P=0.5374, R=0.6624, F1=0.5934
+
+--- Timing ---
+Start time (local): 2025-09-04 14:41:13
+End time   (local): 2025-09-04 14:45:43
+Inference-only time: 234.343 s
+Images processed:    5000
+Per-image latency:   46.869 ms/image
+Throughput:          21.336 images/s
+End-to-end walltime: 269.808 s
+
+Saved metrics -> Output/FasterRCNN/fasterrcnn_test_eval.txt
+Saved confusion matrix counts -> Output/FasterRCNN/fasterrcnn_confusion_matrix_counts.csv
+Saved row-normalized confusion matrix -> Output/FasterRCNN/fasterrcnn_confusion_matrix_row_normalized.csv
+Saved confusion matrix heatmap -> Output/FasterRCNN/fasterrcnn_confusion_matrix.png
+Saving sample visualizations...
+Done. Visualizations in Output/FasterRCNN/Sample_Outputs

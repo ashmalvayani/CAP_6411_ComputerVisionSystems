@@ -1,0 +1,225 @@
+CUDA_VISIBLE_DEVICES=
+Thu Sep  4 15:23:08 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Quadro RTX 6000                Off |   00000000:5E:00.0 Off |                  Off |
+| 33%   44C    P8             13W /  260W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+final text_encoder_type: bert-base-uncased
+loading annotations into memory...
+Done (t=0.60s)
+creating index...
+index created!
+final text_encoder_type: bert-base-uncased
+Input text prompt: person . bicycle . car . motorcycle . airplane . bus . train . truck . boat . traffic light . fire hydrant . stop sign . parking meter . bench . bird . cat . dog . horse . sheep . cow . elephant . bear . zebra . giraffe . backpack . umbrella . handbag . tie . suitcase . frisbee . skis . snowboard . sports ball . kite . baseball bat . baseball glove . skateboard . surfboard . tennis racket . bottle . wine glass . cup . fork . knife . spoon . bowl . banana . apple . sandwich . orange . broccoli . carrot . hot dog . pizza . donut . cake . chair . couch . potted plant . bed . dining table . toilet . tv . laptop . mouse . remote . keyboard . cell phone . microwave . oven . toaster . sink . refrigerator . book . clock . vase . scissors . teddy bear . hair drier . toothbrush .
+
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_139.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_285.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_632.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_724.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_776.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_785.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_802.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_872.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_885.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_1000.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_1268.jpg
+Saved visualization: /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/Sample_Outputs/groundingdino_1296.jpg
+processed 29/5000 images. time: 16.24s, ETA: 2783.67s
+processed 59/5000 images. time: 30.33s, ETA: 2540.21s
+processed 89/5000 images. time: 44.43s, ETA: 2451.86s
+processed 119/5000 images. time: 58.68s, ETA: 2407.05s
+processed 149/5000 images. time: 72.97s, ETA: 2375.78s
+processed 179/5000 images. time: 86.88s, ETA: 2339.83s
+processed 209/5000 images. time: 101.33s, ETA: 2322.85s
+processed 239/5000 images. time: 115.21s, ETA: 2295.13s
+processed 269/5000 images. time: 129.21s, ETA: 2272.42s
+processed 299/5000 images. time: 143.28s, ETA: 2252.63s
+processed 329/5000 images. time: 157.74s, ETA: 2239.55s
+processed 359/5000 images. time: 172.04s, ETA: 2224.05s
+processed 389/5000 images. time: 185.78s, ETA: 2202.09s
+processed 419/5000 images. time: 199.80s, ETA: 2184.41s
+processed 449/5000 images. time: 214.25s, ETA: 2171.65s
+processed 479/5000 images. time: 228.49s, ETA: 2156.61s
+processed 509/5000 images. time: 242.42s, ETA: 2138.90s
+processed 539/5000 images. time: 256.30s, ETA: 2121.22s
+processed 569/5000 images. time: 270.75s, ETA: 2108.40s
+processed 599/5000 images. time: 284.62s, ETA: 2091.20s
+processed 629/5000 images. time: 298.57s, ETA: 2074.81s
+processed 659/5000 images. time: 312.50s, ETA: 2058.55s
+processed 689/5000 images. time: 326.50s, ETA: 2042.86s
+processed 719/5000 images. time: 340.61s, ETA: 2028.03s
+processed 749/5000 images. time: 355.15s, ETA: 2015.70s
+processed 779/5000 images. time: 369.17s, ETA: 2000.33s
+processed 809/5000 images. time: 383.18s, ETA: 1985.05s
+processed 839/5000 images. time: 397.00s, ETA: 1968.91s
+processed 869/5000 images. time: 411.02s, ETA: 1953.88s
+processed 899/5000 images. time: 425.30s, ETA: 1940.12s
+processed 929/5000 images. time: 438.33s, ETA: 1920.81s
+processed 959/5000 images. time: 451.57s, ETA: 1902.82s
+processed 989/5000 images. time: 464.84s, ETA: 1885.21s
+processed 1019/5000 images. time: 477.55s, ETA: 1865.66s
+processed 1049/5000 images. time: 490.50s, ETA: 1847.44s
+processed 1079/5000 images. time: 503.92s, ETA: 1831.19s
+processed 1109/5000 images. time: 517.96s, ETA: 1817.29s
+processed 1139/5000 images. time: 531.14s, ETA: 1800.47s
+processed 1169/5000 images. time: 544.37s, ETA: 1783.97s
+processed 1199/5000 images. time: 557.76s, ETA: 1768.19s
+processed 1229/5000 images. time: 571.06s, ETA: 1752.22s
+processed 1259/5000 images. time: 584.16s, ETA: 1735.79s
+processed 1289/5000 images. time: 597.17s, ETA: 1719.25s
+processed 1319/5000 images. time: 610.86s, ETA: 1704.77s
+processed 1349/5000 images. time: 624.04s, ETA: 1688.92s
+processed 1379/5000 images. time: 637.06s, ETA: 1672.80s
+processed 1409/5000 images. time: 649.96s, ETA: 1656.50s
+processed 1439/5000 images. time: 663.02s, ETA: 1640.72s
+processed 1469/5000 images. time: 675.77s, ETA: 1624.34s
+processed 1499/5000 images. time: 688.84s, ETA: 1608.82s
+processed 1529/5000 images. time: 701.54s, ETA: 1592.57s
+processed 1559/5000 images. time: 714.72s, ETA: 1577.53s
+processed 1589/5000 images. time: 728.94s, ETA: 1564.77s
+processed 1619/5000 images. time: 741.96s, ETA: 1549.46s
+processed 1649/5000 images. time: 755.00s, ETA: 1534.28s
+processed 1679/5000 images. time: 768.06s, ETA: 1519.20s
+processed 1709/5000 images. time: 781.13s, ETA: 1504.21s
+processed 1739/5000 images. time: 794.09s, ETA: 1489.09s
+processed 1769/5000 images. time: 807.09s, ETA: 1474.11s
+processed 1799/5000 images. time: 820.02s, ETA: 1459.08s
+processed 1829/5000 images. time: 833.16s, ETA: 1444.48s
+processed 1859/5000 images. time: 847.15s, ETA: 1431.36s
+processed 1889/5000 images. time: 860.31s, ETA: 1416.84s
+processed 1919/5000 images. time: 873.30s, ETA: 1402.10s
+processed 1949/5000 images. time: 886.24s, ETA: 1387.34s
+processed 1979/5000 images. time: 899.22s, ETA: 1372.68s
+processed 2009/5000 images. time: 912.40s, ETA: 1358.39s
+processed 2039/5000 images. time: 925.38s, ETA: 1343.82s
+processed 2069/5000 images. time: 938.40s, ETA: 1329.36s
+processed 2099/5000 images. time: 951.32s, ETA: 1314.80s
+processed 2129/5000 images. time: 964.25s, ETA: 1300.31s
+processed 2159/5000 images. time: 977.14s, ETA: 1285.80s
+processed 2189/5000 images. time: 991.12s, ETA: 1272.75s
+processed 2219/5000 images. time: 1004.28s, ETA: 1258.63s
+processed 2249/5000 images. time: 1017.44s, ETA: 1244.54s
+processed 2279/5000 images. time: 1030.59s, ETA: 1230.47s
+processed 2309/5000 images. time: 1043.45s, ETA: 1216.07s
+processed 2339/5000 images. time: 1056.49s, ETA: 1201.93s
+processed 2369/5000 images. time: 1069.69s, ETA: 1187.99s
+processed 2399/5000 images. time: 1082.60s, ETA: 1173.75s
+processed 2429/5000 images. time: 1095.42s, ETA: 1159.46s
+processed 2459/5000 images. time: 1108.65s, ETA: 1145.62s
+processed 2489/5000 images. time: 1121.51s, ETA: 1131.42s
+processed 2519/5000 images. time: 1134.55s, ETA: 1117.43s
+processed 2549/5000 images. time: 1148.88s, ETA: 1104.71s
+processed 2579/5000 images. time: 1161.85s, ETA: 1090.67s
+processed 2609/5000 images. time: 1174.73s, ETA: 1076.57s
+processed 2639/5000 images. time: 1187.99s, ETA: 1062.85s
+processed 2669/5000 images. time: 1201.10s, ETA: 1048.99s
+processed 2699/5000 images. time: 1214.23s, ETA: 1035.18s
+processed 2729/5000 images. time: 1227.24s, ETA: 1021.28s
+processed 2759/5000 images. time: 1240.06s, ETA: 1007.24s
+processed 2789/5000 images. time: 1253.07s, ETA: 993.38s
+processed 2819/5000 images. time: 1266.07s, ETA: 979.53s
+processed 2849/5000 images. time: 1279.35s, ETA: 965.91s
+processed 2879/5000 images. time: 1292.38s, ETA: 952.11s
+processed 2909/5000 images. time: 1305.55s, ETA: 938.43s
+processed 2939/5000 images. time: 1320.13s, ETA: 925.76s
+processed 2969/5000 images. time: 1333.05s, ETA: 911.90s
+processed 2999/5000 images. time: 1346.01s, ETA: 898.09s
+processed 3029/5000 images. time: 1359.08s, ETA: 884.36s
+processed 3059/5000 images. time: 1372.31s, ETA: 870.76s
+processed 3089/5000 images. time: 1385.49s, ETA: 857.13s
+processed 3119/5000 images. time: 1398.37s, ETA: 843.33s
+processed 3149/5000 images. time: 1411.51s, ETA: 829.69s
+processed 3179/5000 images. time: 1424.43s, ETA: 815.94s
+processed 3209/5000 images. time: 1437.41s, ETA: 802.24s
+processed 3239/5000 images. time: 1450.52s, ETA: 788.63s
+processed 3269/5000 images. time: 1463.33s, ETA: 774.86s
+processed 3299/5000 images. time: 1476.29s, ETA: 761.19s
+processed 3329/5000 images. time: 1489.00s, ETA: 747.41s
+processed 3359/5000 images. time: 1501.72s, ETA: 733.65s
+processed 3389/5000 images. time: 1516.27s, ETA: 720.77s
+processed 3419/5000 images. time: 1528.94s, ETA: 707.01s
+processed 3449/5000 images. time: 1541.83s, ETA: 693.36s
+processed 3479/5000 images. time: 1554.69s, ETA: 679.70s
+processed 3509/5000 images. time: 1567.37s, ETA: 665.99s
+processed 3539/5000 images. time: 1580.04s, ETA: 652.29s
+processed 3569/5000 images. time: 1592.88s, ETA: 638.67s
+processed 3599/5000 images. time: 1605.57s, ETA: 625.01s
+processed 3629/5000 images. time: 1618.36s, ETA: 611.40s
+processed 3659/5000 images. time: 1631.51s, ETA: 597.94s
+processed 3689/5000 images. time: 1644.58s, ETA: 584.45s
+processed 3719/5000 images. time: 1657.69s, ETA: 570.99s
+processed 3749/5000 images. time: 1670.93s, ETA: 557.57s
+processed 3779/5000 images. time: 1684.05s, ETA: 544.12s
+processed 3809/5000 images. time: 1697.22s, ETA: 530.69s
+processed 3839/5000 images. time: 1710.40s, ETA: 517.26s
+processed 3869/5000 images. time: 1723.53s, ETA: 503.83s
+processed 3899/5000 images. time: 1738.30s, ETA: 490.86s
+processed 3929/5000 images. time: 1751.29s, ETA: 477.38s
+processed 3959/5000 images. time: 1764.38s, ETA: 463.93s
+processed 3989/5000 images. time: 1777.12s, ETA: 450.41s
+processed 4019/5000 images. time: 1790.17s, ETA: 436.96s
+processed 4049/5000 images. time: 1803.36s, ETA: 423.56s
+processed 4079/5000 images. time: 1816.27s, ETA: 410.10s
+processed 4109/5000 images. time: 1829.47s, ETA: 396.70s
+processed 4139/5000 images. time: 1842.73s, ETA: 383.33s
+processed 4169/5000 images. time: 1855.62s, ETA: 369.88s
+processed 4199/5000 images. time: 1868.41s, ETA: 356.42s
+processed 4229/5000 images. time: 1881.27s, ETA: 342.98s
+processed 4259/5000 images. time: 1894.02s, ETA: 329.53s
+processed 4289/5000 images. time: 1906.83s, ETA: 316.10s
+processed 4319/5000 images. time: 1919.80s, ETA: 302.71s
+processed 4349/5000 images. time: 1932.67s, ETA: 289.30s
+processed 4379/5000 images. time: 1945.57s, ETA: 275.91s
+processed 4409/5000 images. time: 1958.64s, ETA: 262.54s
+processed 4439/5000 images. time: 1971.50s, ETA: 249.16s
+processed 4469/5000 images. time: 1987.00s, ETA: 236.09s
+processed 4499/5000 images. time: 2000.18s, ETA: 222.74s
+processed 4529/5000 images. time: 2013.33s, ETA: 209.38s
+processed 4559/5000 images. time: 2026.38s, ETA: 196.02s
+processed 4589/5000 images. time: 2039.63s, ETA: 182.67s
+processed 4619/5000 images. time: 2052.77s, ETA: 169.32s
+processed 4649/5000 images. time: 2066.02s, ETA: 155.98s
+processed 4679/5000 images. time: 2078.99s, ETA: 142.63s
+processed 4709/5000 images. time: 2092.18s, ETA: 129.29s
+processed 4739/5000 images. time: 2105.39s, ETA: 115.95s
+processed 4769/5000 images. time: 2118.58s, ETA: 102.62s
+processed 4799/5000 images. time: 2131.85s, ETA: 89.29s
+processed 4829/5000 images. time: 2144.61s, ETA: 75.94s
+processed 4859/5000 images. time: 2157.82s, ETA: 62.62s
+processed 4889/5000 images. time: 2171.13s, ETA: 49.29s
+processed 4919/5000 images. time: 2184.32s, ETA: 35.97s
+processed 4949/5000 images. time: 2197.45s, ETA: 22.64s
+processed 4979/5000 images. time: 2210.50s, ETA: 9.32s
+Accumulating evaluation results...
+DONE (t=32.23s).
+IoU metric: bbox
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.485
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.644
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.529
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.339
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.518
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.634
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.386
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.668
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.737
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.591
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.775
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.887
+Final results: [0.4849903514943412, 0.6442410708588426, 0.5292458832923012, 0.3394689722720443, 0.517590864634263, 0.6340326608059382, 0.38598618394765905, 0.6682341139364432, 0.7371891287046143, 0.5910267168581058, 0.7745825530483975, 0.8873276766368795]
+Saved test predictions -> /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/groundingdino_test_predictions.json
+Saved evaluation metrics -> /home/ashmal/Courses/CVS/Assignment_2/scripts/Output/GroundingDINO/groundingdino_test_eval.txt
