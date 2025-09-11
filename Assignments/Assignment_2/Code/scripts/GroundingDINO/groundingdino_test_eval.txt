@@ -1,0 +1,22 @@
+COCO Evaluation Metrics (pycocotools):
+mAP@[.50:.95]: 0.4850
+AP50: 0.6442
+AP75: 0.5292
+AP (small/medium/large): 0.3395/0.5176/0.6340
+AR@1/10/100: 0.3860/0.6682/0.7372
+AR (small/medium/large): 0.5910/0.7746/0.8873
+
+Fixed-threshold PRF1 (IoU=0.50, score>=0.50):
+Precision: 0.8217
+Recall:    0.4535
+F1:        0.5845
+(Counts) TP=16682 FP=3619 FN=20099
+
+Timing:
+Images processed: 5000
+Total wall time (s): 2275.246
+Model inference time total (s): 1070.340
+Avg wall time per image (ms): 455.049
+Avg model time per image (ms): 214.068
+Throughput wall (img/s): 2.198
+Throughput model-only (img/s): 4.671414797449778
