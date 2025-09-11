@@ -1,0 +1,41 @@
+CUDA_VISIBLE_DEVICES=
+Wed Sep 10 23:47:58 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-PCIE-32GB           Off |   00000000:3B:00.0 Off |                    0 |
+| N/A   39C    P0             27W /  250W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+final text_encoder_type: bert-base-uncased
+==== RESULTS (Mean Dice) ====
+Baseline (DINO+SAM2): Person=0.848, Vehicle=0.807
+Baseline (CLIPSeg):   Person=0.629, Vehicle=0.703
+Proposed (YOLO+SAM2): Person=0.865, Vehicle=0.830
+
+==== PERFORMANCE METRICS ====
+DINO:
+  Total time   = 97.46 s
+  Time/sample  = 964.96 ms
+  GPU memory   = 7111.85 MB per sample
+CLIPSeg:
+  Total time   = 44.53 s
+  Time/sample  = 440.86 ms
+  GPU memory   = 3944.12 MB per sample
+YOLO:
+  Total time   = 66.12 s
+  Time/sample  = 654.63 ms
+  GPU memory   = 7112.95 MB per sample
