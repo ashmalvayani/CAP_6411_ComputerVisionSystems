@@ -1,0 +1,48 @@
+CUDA_VISIBLE_DEVICES=
+Tue Sep 16 01:45:17 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.65.06              Driver Version: 580.65.06      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100 80GB PCIe          Off |   00000000:17:00.0 Off |                    0 |
+| N/A   42C    P0             46W /  300W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{'loss': 2.8646, 'grad_norm': 21.761669158935547, 'learning_rate': 1.9027777777777776e-06, 'epoch': 0.3}
+{'loss': 1.7942, 'grad_norm': 33.7106819152832, 'learning_rate': 1.8035714285714284e-06, 'epoch': 0.6}
+{'loss': 1.1231, 'grad_norm': 20.21470832824707, 'learning_rate': 1.7043650793650792e-06, 'epoch': 0.89}
+{'eval_loss': 0.7042793035507202, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8185185185185185, 'eval_runtime': 119.7956, 'eval_samples_per_second': 15.777, 'eval_steps_per_second': 0.25, 'epoch': 1.0}
+{'loss': 0.7063, 'grad_norm': 19.94963264465332, 'learning_rate': 1.60515873015873e-06, 'epoch': 1.19}
+{'loss': 0.5481, 'grad_norm': 21.315284729003906, 'learning_rate': 1.5059523809523809e-06, 'epoch': 1.49}
+{'loss': 0.4599, 'grad_norm': 21.03006935119629, 'learning_rate': 1.4067460317460317e-06, 'epoch': 1.79}
+{'eval_loss': 0.4106232523918152, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8830687830687831, 'eval_runtime': 118.732, 'eval_samples_per_second': 15.918, 'eval_steps_per_second': 0.253, 'epoch': 2.0}
+{'loss': 0.3962, 'grad_norm': 17.224092483520508, 'learning_rate': 1.3075396825396825e-06, 'epoch': 2.08}
+{'loss': 0.3099, 'grad_norm': 18.68561363220215, 'learning_rate': 1.2083333333333331e-06, 'epoch': 2.38}
+{'loss': 0.3013, 'grad_norm': 26.390045166015625, 'learning_rate': 1.1091269841269842e-06, 'epoch': 2.68}
+{'loss': 0.2921, 'grad_norm': 23.28218650817871, 'learning_rate': 1.0099206349206348e-06, 'epoch': 2.98}
+{'eval_loss': 0.36498913168907166, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8915343915343915, 'eval_runtime': 118.9668, 'eval_samples_per_second': 15.887, 'eval_steps_per_second': 0.252, 'epoch': 3.0}
+{'loss': 0.2358, 'grad_norm': 12.0263671875, 'learning_rate': 9.107142857142857e-07, 'epoch': 3.27}
+{'loss': 0.1974, 'grad_norm': 17.99964714050293, 'learning_rate': 8.115079365079365e-07, 'epoch': 3.57}
+{'loss': 0.1902, 'grad_norm': 9.25881290435791, 'learning_rate': 7.123015873015873e-07, 'epoch': 3.87}
+{'eval_loss': 0.34467947483062744, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8899470899470899, 'eval_runtime': 123.7791, 'eval_samples_per_second': 15.269, 'eval_steps_per_second': 0.242, 'epoch': 4.0}
+{'loss': 0.1642, 'grad_norm': 13.762702941894531, 'learning_rate': 6.130952380952381e-07, 'epoch': 4.17}
+{'loss': 0.147, 'grad_norm': 12.28740119934082, 'learning_rate': 5.138888888888889e-07, 'epoch': 4.46}
+{'loss': 0.1424, 'grad_norm': 15.492324829101562, 'learning_rate': 4.146825396825397e-07, 'epoch': 4.76}
+{'eval_loss': 0.33940812945365906, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8962962962962963, 'eval_runtime': 124.2585, 'eval_samples_per_second': 15.21, 'eval_steps_per_second': 0.241, 'epoch': 5.0}
+{'loss': 0.1497, 'grad_norm': 10.842138290405273, 'learning_rate': 3.1547619047619045e-07, 'epoch': 5.06}
+{'loss': 0.1136, 'grad_norm': 18.15479850769043, 'learning_rate': 2.1626984126984127e-07, 'epoch': 5.36}
+{'loss': 0.1187, 'grad_norm': 12.318178176879883, 'learning_rate': 1.1706349206349206e-07, 'epoch': 5.65}
+{'loss': 0.1139, 'grad_norm': 12.649357795715332, 'learning_rate': 1.7857142857142856e-08, 'epoch': 5.95}
+{'eval_loss': 0.33751142024993896, 'eval_model_preparation_time': 0.0021, 'eval_accuracy': 0.8947089947089947, 'eval_runtime': 120.7201, 'eval_samples_per_second': 15.656, 'eval_steps_per_second': 0.249, 'epoch': 6.0}
+{'train_runtime': 5170.4913, 'train_samples_per_second': 12.428, 'train_steps_per_second': 0.195, 'train_loss': 0.5152153382225643, 'epoch': 6.0}
