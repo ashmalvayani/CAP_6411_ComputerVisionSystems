@@ -1,0 +1,3 @@
+[submodule "Assignments/Assignment_5/Code/InternVL"]
+	path = Assignments/Assignment_5/Code/InternVL
+	url = https://github.com/OpenGVLab/InternVL.git

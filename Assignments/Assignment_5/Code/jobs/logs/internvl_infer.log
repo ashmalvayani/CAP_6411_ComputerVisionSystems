@@ -1,0 +1,96 @@
+[2025-09-28 21:25:06] [INFO] ==== InternVL inference (debug) ====
+[2025-09-28 21:25:06] [INFO] Args: {'model_id': 'InternVL/internvl_chat/work_dirs/internvl_chat_v3/internvl3_8b_dynamic_res_2nd_finetune_full', 'lora_path': None, 'split': 'test', 'output': 'results/internvl3_test.json', 'log_file': 'logs/internvl_infer.log', 'dtype': 'bfloat16', 'batch_size': 1, 'max_new_tokens': 128, 'temperature': 0.0, 'top_p': 1.0, 'seed': 42, 'io_workers': 4, 'debug': 1}
+[2025-09-28 21:25:09] [INFO] Host: c2-1
+[2025-09-28 21:25:09] [INFO] Platform: Linux-6.8.0-71-generic-x86_64-with-glibc2.39
+[2025-09-28 21:25:09] [INFO] Python: 3.9.23
+[2025-09-28 21:25:09] [INFO] Torch: 2.8.0+cu128
+[2025-09-28 21:25:10] [INFO] CUDA available: True
+[2025-09-28 21:25:10] [INFO] CUDA version (runtime): 12.8
+[2025-09-28 21:25:10] [INFO] cuDNN enabled: True
+[2025-09-28 21:25:10] [INFO] GPU[0]: NVIDIA RTX A6000 (cc 8.6) mem=50.9 GB
+[2025-09-28 21:25:10] [INFO] ENV CUDA_VISIBLE_DEVICES=0
+[2025-09-28 21:25:12] [INFO] Model path exists: InternVL/internvl_chat/work_dirs/internvl_chat_v3/internvl3_8b_dynamic_res_2nd_finetune_full
+[2025-09-28 21:25:12] [INFO] Loading dataset: AI4Math/MathVista (test)
+[2025-09-28 21:25:17] [INFO] Dataset loaded: 5141 items
+[2025-09-28 21:25:19] [INFO] Tokenizer/Processor loaded.
+[2025-09-28 21:25:59] [INFO] Model loaded.
+[2025-09-28 21:25:59] [DEBUG] Trying image tokens: ['<image>', '<img>', '<image_placeholder>', '<vision>']
+[2025-09-28 21:25:59] [INFO] [internvl] using image token: '<img>' (id=151665)
+[2025-09-28 21:25:59] [INFO] DEBUG mode: restricting to first 10 items.
+[2025-09-28 21:26:05] [DEBUG] pid=1001 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:14] [DEBUG] [1/10] pid=1001 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:14] [DEBUG] pid=1002 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:20] [DEBUG] [2/10] pid=1002 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:20] [DEBUG] pid=1003 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:26] [DEBUG] [3/10] pid=1003 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:26] [DEBUG] pid=1004 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:32] [DEBUG] [4/10] pid=1004 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:32] [DEBUG] pid=1005 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:38] [DEBUG] [5/10] pid=1005 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:38] [DEBUG] pid=1006 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:45] [DEBUG] [6/10] pid=1006 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:45] [DEBUG] pid=1007 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:50] [DEBUG] [7/10] pid=1007 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:50] [DEBUG] pid=1008 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:26:56] [DEBUG] [8/10] pid=1008 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:26:56] [DEBUG] pid=1009 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:27:02] [DEBUG] [9/10] pid=1009 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:27:02] [DEBUG] pid=1010 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:27:08] [DEBUG] [10/10] pid=1010 resp='!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+[2025-09-28 21:27:08] [INFO] Processed 10 examples in 68.7 sec (6.868 s/it)
+[2025-09-28 21:27:08] [INFO] Saved: results/internvl3_test.json (items=10)
+[2025-09-28 21:27:08] [INFO] Program exiting.
+[2025-09-28 21:28:59] [INFO] ==== InternVL inference (debug) ====
+[2025-09-28 21:28:59] [INFO] Args: {'model_id': 'OpenGVLab/InternVL3-8B', 'lora_path': None, 'split': 'test', 'output': 'results/internvl3_test.json', 'log_file': 'logs/internvl_infer.log', 'dtype': 'bfloat16', 'batch_size': 1, 'max_new_tokens': 128, 'temperature': 0.0, 'top_p': 1.0, 'seed': 42, 'io_workers': 4, 'debug': 1}
+[2025-09-28 21:29:03] [INFO] Host: c2-1
+[2025-09-28 21:29:03] [INFO] Platform: Linux-6.8.0-71-generic-x86_64-with-glibc2.39
+[2025-09-28 21:29:03] [INFO] Python: 3.9.23
+[2025-09-28 21:29:03] [INFO] Torch: 2.8.0+cu128
+[2025-09-28 21:29:03] [INFO] CUDA available: True
+[2025-09-28 21:29:03] [INFO] CUDA version (runtime): 12.8
+[2025-09-28 21:29:03] [INFO] cuDNN enabled: True
+[2025-09-28 21:29:03] [INFO] GPU[0]: NVIDIA RTX A6000 (cc 8.6) mem=50.9 GB
+[2025-09-28 21:29:03] [INFO] ENV CUDA_VISIBLE_DEVICES=0
+[2025-09-28 21:29:05] [INFO] Using HF model id: OpenGVLab/InternVL3-8B
+[2025-09-28 21:29:05] [INFO] Loading dataset: AI4Math/MathVista (test)
+[2025-09-28 21:29:07] [INFO] Dataset loaded: 5141 items
+[2025-09-28 21:29:09] [INFO] Tokenizer/Processor loaded.
+[2025-09-28 21:31:22] [INFO] Model loaded.
+[2025-09-28 21:31:22] [DEBUG] Trying image tokens: ['<image>', '<img>', '<image_placeholder>', '<vision>']
+[2025-09-28 21:31:22] [INFO] [internvl] using image token: '<img>' (id=151665)
+[2025-09-28 21:31:22] [INFO] DEBUG mode: restricting to first 10 items.
+[2025-09-28 21:31:22] [DEBUG] pid=1001 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:28] [DEBUG] [1/10] pid=1001 resp='To answer the question, we need to count the number of years where the percentage of labor tax is greater than 3%. From '
+[2025-09-28 21:31:29] [DEBUG] pid=1002 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:34] [DEBUG] [2/10] pid=1002 resp='
+
+Answer: A'
+[2025-09-28 21:31:34] [DEBUG] pid=1003 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:40] [DEBUG] [3/10] pid=1003 resp=' 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, '
+[2025-09-28 21:31:40] [DEBUG] pid=1004 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:46] [DEBUG] [4/10] pid=1004 resp='The mode is the number that appears most frequently in a set of numbers. In this case, the mode is 8, as it appears thre'
+[2025-09-28 21:31:46] [DEBUG] pid=1005 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:52] [DEBUG] [5/10] pid=1005 resp='
+(E) 200°
+(F) 20°
+(G) 80° or 100°
+(G) 80° or 100°
+
+(G) 80° or 100°'
+[2025-09-28 21:31:52] [DEBUG] pid=1006 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:31:58] [DEBUG] [6/10] pid=1006 resp='To find the rate of change between 2010 and 2011, we need to subtract the number of students receiving scholarships in 2'
+[2025-09-28 21:31:58] [DEBUG] pid=1007 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:32:04] [DEBUG] [7/10] pid=1007 resp='Five groups contain at least one bar with value greater than 4. The groups are "haste", "gloom", "shelf", "permit", and '
+[2025-09-28 21:32:04] [DEBUG] pid=1008 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:32:10] [DEBUG] [8/10] pid=1008 resp='To determine the rate of change between the years 2011 and 2012, we need to calculate the difference in the number of en'
+[2025-09-28 21:32:10] [DEBUG] pid=1009 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:32:16] [DEBUG] [9/10] pid=1009 resp='Two objects are preferred by more than 5 people in at least one category: "calf" and "oxen".
+
+The final answer is 2.'
+[2025-09-28 21:32:16] [DEBUG] pid=1010 vit_embeds: (1, 256, 3584) -> N=256
+[2025-09-28 21:32:22] [DEBUG] [10/10] pid=1010 resp='
+(F) half past
+(B)'
+[2025-09-28 21:32:22] [INFO] Processed 10 examples in 60.2 sec (6.021 s/it)
+[2025-09-28 21:32:22] [INFO] Saved: results/internvl3_test.json (items=10)
+[2025-09-28 21:32:22] [INFO] Program exiting.
