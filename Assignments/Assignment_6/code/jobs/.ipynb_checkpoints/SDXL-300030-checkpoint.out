@@ -1,0 +1,33 @@
+CUDA_VISIBLE_DEVICES=0
+Thu Oct  9 18:17:49 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:18:00.0 Off |                  Off |
+| 30%   39C    P8             16W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Loading prompts...
+Loading pipelines (first time can be slow)...
+Preparing COCO val2014 reference subset for FID...
+Reference: sayakpaul/coco-30-val-2014 / split='train', column='image', N=100
+Computing FID: SDXL-Base vs COCO subset...
+FID (SDXL-Base vs COCO[train:100]): 368.958
+Computing FID: SDXL-Turbo vs COCO subset...
+FID (SDXL-Turbo vs COCO[train:100]): 391.567
+Done. See:
+ - Images: sdxl_eval_out/sdxl_base and sdxl_eval_out/sdxl_turbo
+ - CSV:    sdxl_eval_out/timings.csv
+ - Report: sdxl_eval_out/report.md
