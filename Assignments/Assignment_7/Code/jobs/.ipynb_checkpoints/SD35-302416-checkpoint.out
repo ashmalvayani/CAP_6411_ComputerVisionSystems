@@ -1,0 +1,31 @@
+CUDA_VISIBLE_DEVICES=0
+Thu Oct 16 15:21:24 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               On  |   00000000:AF:00.0 Off |                  Off |
+| 30%   44C    P0             81W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Loading prompts...
+Loading pipelines (first time can be slow)...
+
+Computing FID: SD3.5 Large vs COCO subset...
+FID (SD3.5 Large vs COCO[train:100]): 376.004
+Computing FID: SD3.5 Large-Turbo vs COCO subset...
+FID (SD3.5 Large-Turbo vs COCO[train:100]): 369.415
+Inference Done:
+ - Images: sd35_eval_out/sd35_large and sd35_eval_out/sd35_large_turbo
+ - CSV:    sd35_eval_out/timings.csv
