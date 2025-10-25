@@ -21,6 +21,7 @@ Two prompting regimes are provided—**Simple** and **Varied**—and batch scrip
 
 ## Repository Layout
 
+```
 Assignments/Assignment_8/Code/
 ├── har_wan_generate.py # Varied prompts (diversity-focused)
 ├── har_wan_generate_simple.py # Simple prompts (class-focused)
@@ -29,7 +30,7 @@ Assignments/Assignment_8/Code/
 ├── metadata.csv # prompts + seeds + params (varied)
 ├── metadata_simple.csv # prompts + seeds + params (simple)
 └── requirements.txt # environment versions
-
+```
 
 ---
 
