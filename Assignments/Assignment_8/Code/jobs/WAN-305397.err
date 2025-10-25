@@ -1,0 +1,120 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 13095.51it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 779.47 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 757.27 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:02,  2.72s/ examples]         Map (num_proc=8): 13 examples [00:02,  1.34 examples/s]Map (num_proc=8): 19 examples [00:03,  3.94 examples/s]Map (num_proc=8): 20 examples [00:03,  2.54 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 4510.97it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 91.85 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 91.85 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 90.78 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 15420.24it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 999.26 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 960.94 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.83s/ examples]         Map (num_proc=8): 13 examples [00:01,  1.93 examples/s]Map (num_proc=8): 16 examples [00:02,  4.52 examples/s]Map (num_proc=8): 19 examples [00:02,  4.62 examples/s]Map (num_proc=8): 20 examples [00:03,  3.23 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 9536.84it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 87.45 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 87.45 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 86.22 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 10224.07it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 908.07 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 876.74 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.75s/ examples]         Map (num_proc=8): 13 examples [00:01,  2.03 examples/s]Map (num_proc=8): 16 examples [00:01,  4.71 examples/s]Map (num_proc=8): 19 examples [00:02,  5.10 examples/s]Map (num_proc=8): 20 examples [00:03,  3.28 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 10000.72it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 90.09 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 90.09 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 88.94 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 15921.98it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 1035.86 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 995.30 examples/s] 
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.85s/ examples]         Map (num_proc=8): 14 examples [00:01,  2.64 examples/s]Map (num_proc=8): 19 examples [00:02,  4.53 examples/s]Map (num_proc=8): 20 examples [00:03,  3.24 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 10043.83it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 87.56 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 87.56 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 86.52 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 10351.44it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 996.01 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 957.45 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.84s/ examples]         Map (num_proc=8): 14 examples [00:02,  2.55 examples/s]Map (num_proc=8): 19 examples [00:02,  4.54 examples/s]Map (num_proc=8): 20 examples [00:03,  3.18 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 3869.28it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 85.97 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 85.97 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 84.70 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 15810.52it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 979.02 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 941.93 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.88s/ examples]         Map (num_proc=8): 19 examples [00:02,  4.41 examples/s]Map (num_proc=8): 20 examples [00:02,  3.34 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 10182.82it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 92.89 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 92.89 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 91.50 examples/s]
+  0%|          | 0/21 [00:00<?, ?it/s]100%|##########| 21/21 [00:00<00:00, 15864.62it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 884.99 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 853.98 examples/s]
+Map (num_proc=8): 100%|##########| 10/10 [00:00<?, ? examples/s]Map (num_proc=8): 11 examples [00:01,  1.85s/ examples]         Map (num_proc=8): 16 examples [00:01,  4.06 examples/s]Map (num_proc=8): 19 examples [00:02,  4.36 examples/s]Map (num_proc=8): 20 examples [00:03,  3.24 examples/s]
+Grouping examples:   0%|          | 0/10 [00:00<?, ?it/s]Grouping examples: 100%|##########| 10/10 [00:00<00:00, 3992.67it/s]
+Saving the dataset (0/1 shards):   0%|          | 0/10 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 10/10 [00:00<00:00, 84.76 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 84.76 examples/s]Saving the dataset (1/1 shards): 100%|##########| 10/10 [00:00<00:00, 83.63 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 63.25 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 861.88 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 861.88 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 849.16 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.37 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 914.33 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 914.33 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 897.47 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.71 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 866.68 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 866.68 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 852.80 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.67 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 876.56 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 876.56 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 863.43 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.32 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 895.04 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 895.04 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 880.11 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.69 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 900.99 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 900.99 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 886.71 examples/s]
+Adding size bucket: 100%|##########| 10/10 [00:00<?, ? examples/s]Adding size bucket: 20 examples [00:00, 66.68 examples/s]         
+Saving the dataset (0/1 shards):   0%|          | 0/100 [00:00<?, ? examples/s]Saving the dataset (0/1 shards): 100%|##########| 100/100 [00:00<00:00, 880.61 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 880.61 examples/s]Saving the dataset (1/1 shards): 100%|##########| 100/100 [00:00<00:00, 866.27 examples/s]
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 676.44 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1069.43 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1095.32 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1045.13 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1090.82 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 949.32 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1095.89 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+/home/ashmal/anaconda3/envs/cvs_ass8/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/home/ashmal/anaconda3/envs/cvs_ass8/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1582.64 examples/s]
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1364.49 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 2028.88 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1935.62 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1976.11 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1851.63 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1986.60 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1941.72 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1980.69 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1935.09 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1789.61 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1718.77 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1994.06 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 1896.50 examples/s]
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+WARNING:datasets.arrow_dataset:num_proc must be <= 1. Reducing num_proc to 1 for dataset of size 1.
+slurmstepd: error: *** JOB 305397 ON c4-2 CANCELLED AT 2025-10-24T02:14:28 ***

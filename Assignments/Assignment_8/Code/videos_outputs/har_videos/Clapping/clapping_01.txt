@@ -1,0 +1,6 @@
+a college student claps hands a few times while standing in a train station concourse, at noon. steady mid-shot, soft shadows. High quality, realistic motion, 24 fps, (take 2)
+class=Clapping
+frames=61
+steps=32
+guidance=6.0
+size=832x480

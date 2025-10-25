@@ -1,0 +1,6 @@
+a middle-aged person walks slowly while reading a small book inside a modern lobby, in the afternoon. front-facing tracking shot, slight depth of field. High quality, realistic motion, 24 fps, (take 9)
+class=Walking While Reading Book
+frames=61
+steps=32
+guidance=6.0
+size=832x480

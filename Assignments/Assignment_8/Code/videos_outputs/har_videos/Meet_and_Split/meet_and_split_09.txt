@@ -1,0 +1,6 @@
+a jogger meets briefly with another person, then they walk away in opposite directions in a quiet park path, in the afternoon. static wide shot, soft shadows. High quality, realistic motion, 24 fps, (take 10)
+class=Meet and Split
+frames=61
+steps=32
+guidance=6.0
+size=832x480

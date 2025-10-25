@@ -1,0 +1,6 @@
+a jogger sits down calmly on a bench and stays seated inside a modern lobby, in the morning. slight side-angle tracking shot, slight depth of field. High quality, realistic motion, 24 fps, (take 1)
+class=Sitting
+frames=61
+steps=32
+guidance=6.0
+size=832x480

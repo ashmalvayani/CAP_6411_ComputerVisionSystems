@@ -1,0 +1,232 @@
+CUDA_VISIBLE_DEVICES=0
+Fri Oct 24 22:38:01 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:86:00.0 Off |                  Off |
+| 30%   54C    P8             24W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[info] output root: /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple
+
+[GEN] Clapping #01 | A teenager is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_00.mp4
+
+[GEN] Clapping #02 | A girl is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_01.mp4
+
+[GEN] Clapping #03 | A student is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_02.mp4
+
+[GEN] Clapping #04 | A student is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_03.mp4
+
+[GEN] Clapping #05 | A girl is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_04.mp4
+
+[GEN] Clapping #06 | A teenager is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_05.mp4
+
+[GEN] Clapping #07 | A student is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_06.mp4
+
+[GEN] Clapping #08 | A student is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_07.mp4
+
+[GEN] Clapping #09 | A woman is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_08.mp4
+
+[GEN] Clapping #10 | A girl is clapping.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Clapping/clapping_09.mp4
+
+[GEN] Meet and Split #01 | Two students meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_00.mp4
+
+[GEN] Meet and Split #02 | Two friends meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_01.mp4
+
+[GEN] Meet and Split #03 | Two friends meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_02.mp4
+
+[GEN] Meet and Split #04 | Two strangers meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_03.mp4
+
+[GEN] Meet and Split #05 | Two friends meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_04.mp4
+
+[GEN] Meet and Split #06 | Two students meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_05.mp4
+
+[GEN] Meet and Split #07 | Two students meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_06.mp4
+
+[GEN] Meet and Split #08 | Two strangers meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_07.mp4
+
+[GEN] Meet and Split #09 | Two friends meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_08.mp4
+
+[GEN] Meet and Split #10 | Two friends meet briefly and then split apart.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Meet_and_Split/meet_and_split_09.mp4
+
+[GEN] Sitting #01 | A woman is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_00.mp4
+
+[GEN] Sitting #02 | A boy is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_01.mp4
+
+[GEN] Sitting #03 | A boy is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_02.mp4
+
+[GEN] Sitting #04 | A woman is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_03.mp4
+
+[GEN] Sitting #05 | A man is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_04.mp4
+
+[GEN] Sitting #06 | A man is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_05.mp4
+
+[GEN] Sitting #07 | A woman is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_06.mp4
+
+[GEN] Sitting #08 | A teenager is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_07.mp4
+
+[GEN] Sitting #09 | An elderly person is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_08.mp4
+
+[GEN] Sitting #10 | A woman is sitting.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Sitting/sitting_09.mp4
+
+[GEN] Standing Still #01 | A woman is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_00.mp4
+
+[GEN] Standing Still #02 | A boy is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_01.mp4
+
+[GEN] Standing Still #03 | An office worker is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_02.mp4
+
+[GEN] Standing Still #04 | A teenager is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_03.mp4
+
+[GEN] Standing Still #05 | An office worker is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_04.mp4
+
+[GEN] Standing Still #06 | A person is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_05.mp4
+
+[GEN] Standing Still #07 | An office worker is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_06.mp4
+
+[GEN] Standing Still #08 | A student is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_07.mp4
+
+[GEN] Standing Still #09 | A person is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_08.mp4
+
+[GEN] Standing Still #10 | A man is standing still.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Standing_Still/standing_still_09.mp4
+
+[GEN] Walking #01 | A man is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_00.mp4
+
+[GEN] Walking #02 | An office worker is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_01.mp4
+
+[GEN] Walking #03 | A child is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_02.mp4
+
+[GEN] Walking #04 | An elderly person is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_03.mp4
+
+[GEN] Walking #05 | An elderly person is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_04.mp4
+
+[GEN] Walking #06 | A child is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_05.mp4
+
+[GEN] Walking #07 | A teenager is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_06.mp4
+
+[GEN] Walking #08 | A girl is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_07.mp4
+
+[GEN] Walking #09 | A girl is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_08.mp4
+
+[GEN] Walking #10 | A child is walking.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking/walking_09.mp4
+
+[GEN] Walking While Reading Book #01 | A woman is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_00.mp4
+
+[GEN] Walking While Reading Book #02 | An elderly person is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_01.mp4
+
+[GEN] Walking While Reading Book #03 | A student is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_02.mp4
+
+[GEN] Walking While Reading Book #04 | A person is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_03.mp4
+
+[GEN] Walking While Reading Book #05 | A woman is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_04.mp4
+
+[GEN] Walking While Reading Book #06 | A student is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_05.mp4
+
+[GEN] Walking While Reading Book #07 | An elderly person is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_06.mp4
+
+[GEN] Walking While Reading Book #08 | A child is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_07.mp4
+
+[GEN] Walking While Reading Book #09 | A man is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_08.mp4
+
+[GEN] Walking While Reading Book #10 | A child is walking while reading a book.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Reading_Book/walking_while_reading_book_09.mp4
+
+[GEN] Walking While Using Phone #01 | A boy is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_00.mp4
+
+[GEN] Walking While Using Phone #02 | A student is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_01.mp4
+
+[GEN] Walking While Using Phone #03 | A girl is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_02.mp4
+
+[GEN] Walking While Using Phone #04 | An elderly person is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_03.mp4
+
+[GEN] Walking While Using Phone #05 | A child is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_04.mp4
+
+[GEN] Walking While Using Phone #06 | An office worker is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_05.mp4
+
+[GEN] Walking While Using Phone #07 | A student is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_06.mp4
+
+[GEN] Walking While Using Phone #08 | A teenager is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_07.mp4
+
+[GEN] Walking While Using Phone #09 | A boy is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_08.mp4
+
+[GEN] Walking While Using Phone #10 | A woman is walking while using a phone.
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos_simple/Walking_While_Using_Phone/walking_while_using_phone_09.mp4

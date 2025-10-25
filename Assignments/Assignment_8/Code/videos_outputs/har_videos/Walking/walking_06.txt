@@ -1,0 +1,6 @@
+a visitor walks forward at a normal pace in a bright hallway, in the evening. static wide shot, subtle background motion. High quality, realistic motion, 24 fps, (take 7)
+class=Walking
+frames=61
+steps=32
+guidance=6.0
+size=832x480

@@ -1,0 +1,6 @@
+a shopper meets briefly with another person, then they walk away in opposite directions on a campus walkway, at noon. front-facing tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 8)
+class=Meet and Split
+frames=61
+steps=32
+guidance=6.0
+size=832x480

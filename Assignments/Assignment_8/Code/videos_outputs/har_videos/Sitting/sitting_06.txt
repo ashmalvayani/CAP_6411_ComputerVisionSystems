@@ -1,0 +1,6 @@
+a tourist sits down calmly on a bench and stays seated on a wide corridor with windows, in the afternoon. static wide shot, slight depth of field. High quality, realistic motion, 24 fps, (take 7)
+class=Sitting
+frames=61
+steps=32
+guidance=6.0
+size=832x480

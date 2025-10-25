@@ -1,0 +1,6 @@
+an office worker walks slowly while reading a small book beside a row of trees, in the morning. handheld eye-level shot, realistic textures. High quality, realistic motion, 24 fps, (take 6)
+class=Walking While Reading Book
+frames=61
+steps=32
+guidance=6.0
+size=832x480

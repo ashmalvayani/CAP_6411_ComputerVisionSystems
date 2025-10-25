@@ -1,0 +1,95 @@
+CUDA_VISIBLE_DEVICES=0,1
+Fri Oct 24 03:29:13 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               On  |   00000000:3B:00.0 Off |                  Off |
+| 30%   26C    P8             23W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  |   00000000:5E:00.0 Off |                  Off |
+| 30%   25C    P8             18W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2025-10-24 03:29:17,237] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 03:29:27,328] [WARNING] [runner.py:215:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected VISIBLE_DEVICES=0,1 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2025-10-24 03:29:27,328] [INFO] [runner.py:605:main] cmd = /home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10 -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None train.py --deepspeed --config examples/wan_har_lora.toml
+[2025-10-24 03:29:29,276] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 03:29:35,839] [INFO] [launch.py:139:main] 0 NCCL_IB_DISABLE=1
+[2025-10-24 03:29:35,839] [INFO] [launch.py:139:main] 0 NCCL_P2P_DISABLE=1
+[2025-10-24 03:29:35,839] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2025-10-24 03:29:35,839] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2025-10-24 03:29:35,839] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2025-10-24 03:29:35,839] [INFO] [launch.py:164:main] dist_world_size=2
+[2025-10-24 03:29:35,839] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2025-10-24 03:29:35,840] [INFO] [launch.py:256:main] process 32628 spawned with command: ['/home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10', '-u', 'train.py', '--local_rank=0', '--deepspeed', '--config', 'examples/wan_har_lora.toml']
+[2025-10-24 03:29:35,841] [INFO] [launch.py:256:main] process 32629 spawned with command: ['/home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10', '-u', 'train.py', '--local_rank=1', '--deepspeed', '--config', 'examples/wan_har_lora.toml']
+[2025-10-24 03:29:39,357] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-10-24 03:29:39,369] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 03:29:47,680] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-10-24 03:29:47,697] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-10-24 03:29:47,697] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+using video_clip_mode=full
+using framerate=16
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Prepared/Clapping
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)

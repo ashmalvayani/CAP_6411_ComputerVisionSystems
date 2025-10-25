@@ -1,0 +1,6 @@
+a commuter meets briefly with another person, then they walk away in opposite directions in a train station concourse, at noon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 1)
+class=Meet and Split
+frames=61
+steps=32
+guidance=6.0
+size=832x480

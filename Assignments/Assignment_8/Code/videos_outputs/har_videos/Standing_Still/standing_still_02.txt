@@ -1,0 +1,6 @@
+a jogger stands still for a moment, looking ahead near a building entrance, in the afternoon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 3)
+class=Standing Still
+frames=61
+steps=32
+guidance=6.0
+size=832x480
