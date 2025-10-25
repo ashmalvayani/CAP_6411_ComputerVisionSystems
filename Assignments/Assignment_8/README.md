@@ -69,64 +69,8 @@ python har_wan_generate.py \
 
 ---
 
-## Clapping (examples)
+## 🎬 Demo Gallery 
+
+### Clapping (examples)
 
 <table> <tr> <td width="25%"> <strong>clapping_00</strong><br/> <video src="./videos_outputs/clapping_00.mp4" width="240" controls muted></video><br/> <a href="./videos_outputs/clapping_00.mp4">video</a> · <a href="./videos_outputs/clapping_00.txt">prompt</a> </td> <td width="25%"> <strong>clapping_01</strong><br/> <video src="./videos_outputs/clapping_01.mp4" width="240" controls muted></video><br/> <a href="./videos_outputs/clapping_01.mp4">video</a> · <a href="./videos_outputs/clapping_01.txt">prompt</a> </td> <td width="25%"> <strong>clapping_02</strong><br/> <video src="./videos_outputs/clapping_02.mp4" width="240" controls muted></video><br/> <a href="./videos_outputs/clapping_02.mp4">video</a> · <a href="./videos_outputs/clapping_02.txt">prompt</a> </td> <td width="25%"> <strong>clapping_03</strong><br/> <video src="./videos_outputs/clapping_03.mp4" width="240" controls muted></video><br/> <a href="./videos_outputs/clapping_03.mp4">video</a> </td> </tr> </table>
-
-
-## 🎬 Demo Gallery (inline videos)
-
-> Tip: If a player doesn’t appear, try opening the README on GitHub desktop (mobile sometimes hides video controls).
-
-### Clapping (4 examples)
-
-<table>
-<tr>
-<td width="25%">
-  <strong>clapping_00</strong><br/>
-  <video src="./videos_outputs/clapping_00.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/clapping_00.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>clapping_01</strong><br/>
-  <video src="./videos_outputs/clapping_01.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/clapping_01.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>clapping_02</strong><br/>
-  <video src="./videos_outputs/clapping_02.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/clapping_02.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>clapping_03</strong><br/>
-  <video src="./videos_outputs/clapping_03.mp4" width="240" controls muted playsinline></video>
-</td>
-</tr>
-</table>
-
-### Walking (drop in your files)
-
-<table>
-<tr>
-<td width="25%">
-  <strong>walking_00</strong><br/>
-  <video src="./videos_outputs/walking_00.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/walking_00.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>walking_01</strong><br/>
-  <video src="./videos_outputs/walking_01.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/walking_01.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>walking_reading_00</strong><br/>
-  <video src="./videos_outputs/walking_reading_00.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/walking_reading_00.txt">prompt</a></sub>
-</td>
-<td width="25%">
-  <strong>walking_phone_00</strong><br/>
-  <video src="./videos_outputs/walking_phone_00.mp4" width="240" controls muted playsinline></video><br/>
-  <sub><a href="./videos_outputs/walking_phone_00.txt">prompt</a></sub>
-</td>
-</tr>
-</table>
