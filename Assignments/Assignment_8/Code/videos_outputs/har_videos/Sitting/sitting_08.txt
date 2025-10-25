@@ -1,0 +1,6 @@
+a young adult sits down calmly on a bench and stays seated in a train station concourse, in the evening. low-angle shot, subtle background motion. High quality, realistic motion, 24 fps, (take 9)
+class=Sitting
+frames=61
+steps=32
+guidance=6.0
+size=832x480

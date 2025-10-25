@@ -1,0 +1,231 @@
+CUDA_VISIBLE_DEVICES=0
+Fri Oct 24 20:59:44 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:3B:00.0 Off |                  Off |
+| 30%   52C    P8             21W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+[GEN] Clapping #01 | a tourist claps hands a few times while standing in a train station concourse, at noon. low-angle shot, natural lighting. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_00.mp4
+
+[GEN] Clapping #02 | a college student claps hands a few times while standing in a train station concourse, at noon. steady mid-shot, soft shadows. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_01.mp4
+
+[GEN] Clapping #03 | a commuter claps hands a few times while standing in a quiet park path, at noon. steady mid-shot, soft shadows. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_02.mp4
+
+[GEN] Clapping #04 | a commuter claps hands a few times while standing inside a modern lobby, at noon. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_03.mp4
+
+[GEN] Clapping #05 | a middle-aged person claps hands a few times while standing in a train station concourse, in the evening. front-facing tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_04.mp4
+
+[GEN] Clapping #06 | a commuter claps hands a few times while standing beside a row of trees, in the afternoon. handheld eye-level shot, subtle background motion. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_05.mp4
+
+[GEN] Clapping #07 | a jogger claps hands a few times while standing on a pedestrian plaza, in the morning. low-angle shot, slight depth of field. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_06.mp4
+
+[GEN] Clapping #08 | an office worker claps hands a few times while standing inside a modern lobby, in the evening. steady mid-shot, realistic textures. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_07.mp4
+
+[GEN] Clapping #09 | a young adult claps hands a few times while standing on a pedestrian plaza, at noon. static wide shot, soft shadows. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_08.mp4
+
+[GEN] Clapping #10 | a middle-aged person claps hands a few times while standing inside a modern lobby, at noon. static wide shot, slight depth of field. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Clapping/clapping_09.mp4
+
+[GEN] Meet and Split #01 | a commuter meets briefly with another person, then they walk away in opposite directions in a train station concourse, at noon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_00.mp4
+
+[GEN] Meet and Split #02 | a teenager meets briefly with another person, then they walk away in opposite directions near a building entrance, in the afternoon. slight side-angle tracking shot, soft shadows. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_01.mp4
+
+[GEN] Meet and Split #03 | a young adult meets briefly with another person, then they walk away in opposite directions on a pedestrian plaza, at noon. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_02.mp4
+
+[GEN] Meet and Split #04 | an office worker meets briefly with another person, then they walk away in opposite directions on a campus walkway, in the afternoon. low-angle shot, soft shadows. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_03.mp4
+
+[GEN] Meet and Split #05 | an office worker meets briefly with another person, then they walk away in opposite directions on a city sidewalk, at noon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_04.mp4
+
+[GEN] Meet and Split #06 | a visitor meets briefly with another person, then they walk away in opposite directions inside a modern lobby, at golden hour. front-facing tracking shot, soft shadows. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_05.mp4
+
+[GEN] Meet and Split #07 | a shopper meets briefly with another person, then they walk away in opposite directions in a bright hallway, at noon. low-angle shot, natural lighting. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_06.mp4
+
+[GEN] Meet and Split #08 | a shopper meets briefly with another person, then they walk away in opposite directions on a campus walkway, at noon. front-facing tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_07.mp4
+
+[GEN] Meet and Split #09 | a middle-aged person meets briefly with another person, then they walk away in opposite directions on a campus walkway, at golden hour. front-facing tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_08.mp4
+
+[GEN] Meet and Split #10 | a jogger meets briefly with another person, then they walk away in opposite directions in a quiet park path, in the afternoon. static wide shot, soft shadows. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Meet_and_Split/meet_and_split_09.mp4
+
+[GEN] Sitting #01 | a jogger sits down calmly on a bench and stays seated inside a modern lobby, in the morning. slight side-angle tracking shot, slight depth of field. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_00.mp4
+
+[GEN] Sitting #02 | an office worker sits down calmly on a bench and stays seated on a city sidewalk, at golden hour. static wide shot, natural lighting. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_01.mp4
+
+[GEN] Sitting #03 | an office worker sits down calmly on a bench and stays seated on a pedestrian plaza, in the afternoon. steady mid-shot, slight depth of field. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_02.mp4
+
+[GEN] Sitting #04 | a middle-aged person sits down calmly on a bench and stays seated in a quiet park path, in the afternoon. slight side-angle tracking shot, subtle background motion. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_03.mp4
+
+[GEN] Sitting #05 | a college student sits down calmly on a bench and stays seated near a building entrance, in the evening. slight side-angle tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_04.mp4
+
+[GEN] Sitting #06 | a teenager sits down calmly on a bench and stays seated on a campus walkway, in the afternoon. low-angle shot, subtle background motion. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_05.mp4
+
+[GEN] Sitting #07 | a tourist sits down calmly on a bench and stays seated on a wide corridor with windows, in the afternoon. static wide shot, slight depth of field. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_06.mp4
+
+[GEN] Sitting #08 | a college student sits down calmly on a bench and stays seated in a bright hallway, in the afternoon. low-angle shot, natural lighting. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_07.mp4
+
+[GEN] Sitting #09 | a young adult sits down calmly on a bench and stays seated in a train station concourse, in the evening. low-angle shot, subtle background motion. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_08.mp4
+
+[GEN] Sitting #10 | a jogger sits down calmly on a bench and stays seated on a city sidewalk, in the afternoon. low-angle shot, realistic textures. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Sitting/sitting_09.mp4
+
+[GEN] Standing Still #01 | a jogger stands still for a moment, looking ahead on a wide corridor with windows, in the afternoon. low-angle shot, slight depth of field. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_00.mp4
+
+[GEN] Standing Still #02 | a college student stands still for a moment, looking ahead on a pedestrian plaza, in the afternoon. front-facing tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_01.mp4
+
+[GEN] Standing Still #03 | a jogger stands still for a moment, looking ahead near a building entrance, in the afternoon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_02.mp4
+
+[GEN] Standing Still #04 | a middle-aged person stands still for a moment, looking ahead on a wide corridor with windows, at golden hour. front-facing tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_03.mp4
+
+[GEN] Standing Still #05 | a teenager stands still for a moment, looking ahead on a wide corridor with windows, in the morning. slight side-angle tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_04.mp4
+
+[GEN] Standing Still #06 | a commuter stands still for a moment, looking ahead on a wide corridor with windows, in the afternoon. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_05.mp4
+
+[GEN] Standing Still #07 | an office worker stands still for a moment, looking ahead near a building entrance, in the morning. slight side-angle tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_06.mp4
+
+[GEN] Standing Still #08 | a jogger stands still for a moment, looking ahead in a train station concourse, in the afternoon. handheld eye-level shot, subtle background motion. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_07.mp4
+
+[GEN] Standing Still #09 | a tourist stands still for a moment, looking ahead in a bright hallway, at golden hour. low-angle shot, realistic textures. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_08.mp4
+
+[GEN] Standing Still #10 | a jogger stands still for a moment, looking ahead in a train station concourse, in the morning. low-angle shot, slight depth of field. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Standing_Still/standing_still_09.mp4
+
+[GEN] Walking #01 | a visitor walks forward at a normal pace on a wide corridor with windows, in the morning. slight side-angle tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_00.mp4
+
+[GEN] Walking #02 | a young adult walks forward at a normal pace in a train station concourse, at golden hour. static wide shot, natural lighting. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_01.mp4
+
+[GEN] Walking #03 | a tourist walks forward at a normal pace in a bright hallway, at noon. slight side-angle tracking shot, soft shadows. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_02.mp4
+
+[GEN] Walking #04 | a commuter walks forward at a normal pace near a building entrance, in the afternoon. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_03.mp4
+
+[GEN] Walking #05 | a jogger walks forward at a normal pace inside a modern lobby, at noon. steady mid-shot, soft shadows. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_04.mp4
+
+[GEN] Walking #06 | a teenager walks forward at a normal pace on a city sidewalk, at noon. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_05.mp4
+
+[GEN] Walking #07 | a visitor walks forward at a normal pace in a bright hallway, in the evening. static wide shot, subtle background motion. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_06.mp4
+
+[GEN] Walking #08 | a teenager walks forward at a normal pace in a bright hallway, in the evening. static wide shot, soft shadows. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_07.mp4
+
+[GEN] Walking #09 | a shopper walks forward at a normal pace on a city sidewalk, at golden hour. front-facing tracking shot, subtle background motion. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_08.mp4
+
+[GEN] Walking #10 | a tourist walks forward at a normal pace on a pedestrian plaza, in the evening. slight side-angle tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking/walking_09.mp4
+
+[GEN] Walking While Reading Book #01 | a college student walks slowly while reading a small book on a wide corridor with windows, at noon. steady mid-shot, realistic textures. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_00.mp4
+
+[GEN] Walking While Reading Book #02 | a commuter walks slowly while reading a small book in a quiet park path, in the evening. slight side-angle tracking shot, slight depth of field. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_01.mp4
+
+[GEN] Walking While Reading Book #03 | a shopper walks slowly while reading a small book near a building entrance, in the evening. low-angle shot, natural lighting. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_02.mp4
+
+[GEN] Walking While Reading Book #04 | a young adult walks slowly while reading a small book in a bright hallway, in the afternoon. static wide shot, slight depth of field. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_03.mp4
+
+[GEN] Walking While Reading Book #05 | a middle-aged person walks slowly while reading a small book on a city sidewalk, in the evening. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_04.mp4
+
+[GEN] Walking While Reading Book #06 | an office worker walks slowly while reading a small book beside a row of trees, in the morning. handheld eye-level shot, realistic textures. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_05.mp4
+
+[GEN] Walking While Reading Book #07 | a middle-aged person walks slowly while reading a small book on a city sidewalk, at golden hour. steady mid-shot, realistic textures. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_06.mp4
+
+[GEN] Walking While Reading Book #08 | a visitor walks slowly while reading a small book in a train station concourse, in the evening. handheld eye-level shot, subtle background motion. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_07.mp4
+
+[GEN] Walking While Reading Book #09 | a middle-aged person walks slowly while reading a small book inside a modern lobby, in the afternoon. front-facing tracking shot, slight depth of field. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_08.mp4
+
+[GEN] Walking While Reading Book #10 | a middle-aged person walks slowly while reading a small book near a building entrance, in the evening. front-facing tracking shot, realistic textures. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Reading_Book/walking_while_reading_book_09.mp4
+
+[GEN] Walking While Using Phone #01 | a middle-aged person walks while looking at a phone in one hand in a bright hallway, at noon. static wide shot, subtle background motion. High quality, realistic motion, 24 fps, (take 1)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_00.mp4
+
+[GEN] Walking While Using Phone #02 | a teenager walks while looking at a phone in one hand on a city sidewalk, in the evening. static wide shot, realistic textures. High quality, realistic motion, 24 fps, (take 2)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_01.mp4
+
+[GEN] Walking While Using Phone #03 | a shopper walks while looking at a phone in one hand on a campus walkway, in the morning. steady mid-shot, subtle background motion. High quality, realistic motion, 24 fps, (take 3)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_02.mp4
+
+[GEN] Walking While Using Phone #04 | a teenager walks while looking at a phone in one hand on a campus walkway, in the afternoon. low-angle shot, realistic textures. High quality, realistic motion, 24 fps, (take 4)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_03.mp4
+
+[GEN] Walking While Using Phone #05 | a teenager walks while looking at a phone in one hand on a pedestrian plaza, in the morning. handheld eye-level shot, realistic textures. High quality, realistic motion, 24 fps, (take 5)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_04.mp4
+
+[GEN] Walking While Using Phone #06 | a teenager walks while looking at a phone in one hand on a pedestrian plaza, at noon. slight side-angle tracking shot, soft shadows. High quality, realistic motion, 24 fps, (take 6)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_05.mp4
+
+[GEN] Walking While Using Phone #07 | an office worker walks while looking at a phone in one hand on a pedestrian plaza, at noon. static wide shot, soft shadows. High quality, realistic motion, 24 fps, (take 7)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_06.mp4
+
+[GEN] Walking While Using Phone #08 | a tourist walks while looking at a phone in one hand in a bright hallway, at golden hour. handheld eye-level shot, soft shadows. High quality, realistic motion, 24 fps, (take 8)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_07.mp4
+
+[GEN] Walking While Using Phone #09 | an office worker walks while looking at a phone in one hand near a building entrance, at golden hour. steady mid-shot, realistic textures. High quality, realistic motion, 24 fps, (take 9)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_08.mp4
+
+[GEN] Walking While Using Phone #10 | a shopper walks while looking at a phone in one hand beside a row of trees, at golden hour. handheld eye-level shot, subtle background motion. High quality, realistic motion, 24 fps, (take 10)
+Saved /home/ashmal/Courses/CVS/Assignment_8/Wan2.1/videos/har_videos/Walking_While_Using_Phone/walking_while_using_phone_09.mp4

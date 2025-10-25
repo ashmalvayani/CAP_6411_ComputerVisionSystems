@@ -1,0 +1,6 @@
+an office worker walks while looking at a phone in one hand near a building entrance, at golden hour. steady mid-shot, realistic textures. High quality, realistic motion, 24 fps, (take 9)
+class=Walking While Using Phone
+frames=61
+steps=32
+guidance=6.0
+size=832x480

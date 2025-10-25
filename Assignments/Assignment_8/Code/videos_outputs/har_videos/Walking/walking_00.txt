@@ -1,0 +1,6 @@
+a visitor walks forward at a normal pace on a wide corridor with windows, in the morning. slight side-angle tracking shot, natural lighting. High quality, realistic motion, 24 fps, (take 1)
+class=Walking
+frames=61
+steps=32
+guidance=6.0
+size=832x480

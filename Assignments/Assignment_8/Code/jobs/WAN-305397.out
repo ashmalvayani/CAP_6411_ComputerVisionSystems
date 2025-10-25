@@ -1,0 +1,984 @@
+CUDA_VISIBLE_DEVICES=0,1
+Fri Oct 24 02:06:04 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               On  |   00000000:3B:00.0 Off |                  Off |
+| 30%   26C    P8             23W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  |   00000000:5E:00.0 Off |                  Off |
+| 30%   25C    P8             18W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2025-10-24 02:06:09,102] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 02:06:22,010] [WARNING] [runner.py:215:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected VISIBLE_DEVICES=0,1 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2025-10-24 02:06:22,011] [INFO] [runner.py:605:main] cmd = /home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10 -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMV19 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None train.py --deepspeed --config examples/wan_har_lora.toml
+[2025-10-24 02:06:24,061] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 02:06:32,947] [INFO] [launch.py:139:main] 0 NCCL_IB_DISABLE=1
+[2025-10-24 02:06:32,947] [INFO] [launch.py:139:main] 0 NCCL_P2P_DISABLE=1
+[2025-10-24 02:06:32,947] [INFO] [launch.py:146:main] WORLD INFO DICT: {'localhost': [0, 1]}
+[2025-10-24 02:06:32,947] [INFO] [launch.py:152:main] nnodes=1, num_local_procs=2, node_rank=0
+[2025-10-24 02:06:32,947] [INFO] [launch.py:163:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1]})
+[2025-10-24 02:06:32,947] [INFO] [launch.py:164:main] dist_world_size=2
+[2025-10-24 02:06:32,948] [INFO] [launch.py:168:main] Setting CUDA_VISIBLE_DEVICES=0,1
+[2025-10-24 02:06:32,949] [INFO] [launch.py:256:main] process 22531 spawned with command: ['/home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10', '-u', 'train.py', '--local_rank=0', '--deepspeed', '--config', 'examples/wan_har_lora.toml']
+[2025-10-24 02:06:32,949] [INFO] [launch.py:256:main] process 22532 spawned with command: ['/home/ashmal/anaconda3/envs/cvs_ass8/bin/python3.10', '-u', 'train.py', '--local_rank=1', '--deepspeed', '--config', 'examples/wan_har_lora.toml']
+[2025-10-24 02:06:45,632] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-10-24 02:06:45,641] [INFO] [real_accelerator.py:254:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+Warning: The cache directory for DeepSpeed Triton autotune, /home/ashmal/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2025-10-24 02:07:10,362] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-10-24 02:07:10,362] [INFO] [comm.py:675:init_distributed] cdb=None
+[2025-10-24 02:07:10,362] [INFO] [comm.py:706:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+using video_clip_mode=full
+using framerate=16
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+Grouped metadata is not cached. Computing ungrouped metadata and then grouping.
+Intermediate metadata is not cached. Enumerating all files.
+Saving intermediate metadata dataset.
+Loading intermediate metadata dataset.
+Caching ungrouped metadata.
+Loading grouped metadata with grouping key (2.0, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching latents: (2.0, 3)
+caching latents: (2.0, 896, 448, 3)
+Building iteration order
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching text embeddings: (2.0, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching text embeddings: (2.0, 3)
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+Found grouped metadata cache. Directly loading it.
+Loading grouped metadata with grouping key [2.0, 3]
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching latents: [2.0, 3]
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching latents: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching latents: [2.0, 3]
+caching latents: (2.0, 896, 448, 3)
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Clapping
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Meet and Split
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Sitting
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Standing Still
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Reading Book
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching text embeddings: [2.0, 3]
+caching text embeddings: /home/ashmal/Courses/CVS/Assignment_8/data/HAR-Dataset/HumanActivityRecognition-Subset/Walking While Using Phone
+caching text embeddings: [2.0, 3]
+trainable params: 43,745,280 || all params: 1,462,742,080 || trainable%: 2.9906
+SEED_LAYERS=False BASE_SEED=1234 SEED_FN=None
+Using topology: {ProcessCoord(pipe=0, data=0): 0, ProcessCoord(pipe=0, data=1): 1}
+[2025-10-24 02:10:35,165] [INFO] [module.py:398:_partition_layers] Partitioning pipeline stages with method parameters
+stage=0 layers=32
+     0: InitialLayer
+     1: TransformerLayer
+     2: TransformerLayer
+     3: TransformerLayer
+     4: TransformerLayer
+     5: TransformerLayer
+     6: TransformerLayer
+     7: TransformerLayer
+     8: TransformerLayer
+     9: TransformerLayer
+    10: TransformerLayer
+    11: TransformerLayer
+    12: TransformerLayer
+    13: TransformerLayer
+    14: TransformerLayer
+    15: TransformerLayer
+    16: TransformerLayer
+    17: TransformerLayer
+    18: TransformerLayer
+    19: TransformerLayer
+    20: TransformerLayer
+    21: TransformerLayer
+    22: TransformerLayer
+    23: TransformerLayer
+    24: TransformerLayer
+    25: TransformerLayer
+    26: TransformerLayer
+    27: TransformerLayer
+    28: TransformerLayer
+    29: TransformerLayer
+    30: TransformerLayer
+    31: FinalLayer
+  loss: loss_fn
+[2025-10-24 02:10:36,074] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.17.0, git-hash=unknown, git-branch=unknown
+[2025-10-24 02:10:36,074] [INFO] [config.py:744:__init__] Config mesh_device None world_size = 2
+[2025-10-24 02:10:36,120] [INFO] [engine.py:1313:_configure_distributed_model] ********** distributed groups summary **********
+	 self.dp_world_size=2
+	 self.mp_world_size=1
+	 self.seq_dp_world_size=2
+	 self.sequence_parallel_size=1
+***********************************************
+[2025-10-24 02:10:36,336] [INFO] [config.py:744:__init__] Config mesh_device None world_size = 2
+[2025-10-24 02:10:36,492] [INFO] [engine.py:146:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2025-10-24 02:10:36,516] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2025-10-24 02:10:36,534] [INFO] [config.py:1014:print] DeepSpeedEngine configuration:
+[2025-10-24 02:10:36,535] [INFO] [config.py:1018:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-10-24 02:10:36,535] [INFO] [config.py:1018:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-10-24 02:10:36,535] [INFO] [config.py:1018:print]   amp_enabled .................. False
+[2025-10-24 02:10:36,535] [INFO] [config.py:1018:print]   amp_params ................... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   bfloat16_enabled ............. False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   bfloat16_immediate_grad_update  False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   checkpoint_parallel_write_pipeline  False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   checkpoint_tag_validation_enabled  True
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   checkpoint_tag_validation_fail  False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x9a710c8c3d0>
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   communication_data_type ...... None
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   curriculum_enabled_legacy .... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   curriculum_params_legacy ..... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   data_efficiency_enabled ...... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   dataloader_drop_last ......... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   disable_allgather ............ False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   dump_state ................... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   dynamic_loss_scale_args ...... None
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   eigenvalue_enabled ........... False
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   eigenvalue_gas_boundary_resolution  1
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   eigenvalue_layer_num ......... 0
+[2025-10-24 02:10:36,536] [INFO] [config.py:1018:print]   eigenvalue_max_iter .......... 100
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   eigenvalue_stability ......... 1e-06
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   eigenvalue_tol ............... 0.01
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   eigenvalue_verbose ........... False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   elasticity_enabled ........... False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   fp16_auto_cast ............... None
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   fp16_enabled ................. False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   fp16_master_weights_and_gradients  False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   global_rank .................. 0
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   grad_accum_dtype ............. None
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   gradient_accumulation_steps .. 1
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   gradient_clipping ............ 1.0
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   gradient_predivide_factor .... 1.0
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   graph_harvesting ............. False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   initial_dynamic_scale ........ 65536
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   load_universal_checkpoint .... False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   loss_scale ................... 0
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   memory_breakdown ............. False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   mics_hierarchial_params_gather  False
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   mics_shard_size .............. -1
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-10-24 02:10:36,537] [INFO] [config.py:1018:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   optimizer_legacy_fusion ...... False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   optimizer_name ............... None
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   optimizer_params ............. None
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   pld_enabled .................. False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   pld_params ................... False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   prescale_gradients ........... False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   scheduler_name ............... None
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   scheduler_params ............. None
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   seq_parallel_communication_data_type  torch.float32
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   sparse_attention ............. None
+Global batch size = 2[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   sparse_gradients_enabled ..... False
+
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   steps_per_print .............. 1
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   timers_config ................ enabled=True synchronized=True
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   train_batch_size ............. 2
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   train_micro_batch_size_per_gpu  1
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   use_data_before_expert_parallel_  False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   use_node_local_storage ....... False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   wall_clock_breakdown ......... False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   weight_quantization_config ... None
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   world_size ................... 2
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   zero_allow_untested_optimizer  False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   zero_enabled ................. False
+[2025-10-24 02:10:36,538] [INFO] [config.py:1018:print]   zero_force_ds_cpu_optimizer .. True
+[2025-10-24 02:10:36,539] [INFO] [config.py:1018:print]   zero_optimization_stage ...... 0
+[2025-10-24 02:10:36,539] [INFO] [config.py:1004:print_user_config]   json = {
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 1, 
+    "gradient_clipping": 1.0, 
+    "steps_per_print": 1
+}
+[2025-10-24 02:10:36,539] [INFO] [engine.py:105:__init__] CONFIG: micro_batches=1 micro_batch_size=1
+[2025-10-24 02:10:36,539] [INFO] [engine.py:146:__init__] is_pipe_partitioned= False is_grad_partitioned= False
+[2025-10-24 02:10:36,578] [INFO] [engine.py:165:__init__] RANK=0 STAGE=0 LAYERS=32 [0, 32) STAGE_PARAMS=43745280 (43.745M) TOTAL_PARAMS=43745280 (43.745M) UNIQUE_PARAMS=43745280 (43.745M)
+Global batch size = 2
+[2025-10-24 02:10:36,582] [INFO] [logging.py:107:log_dist] [Rank 0] Using client callable to create basic optimizer
+[2025-10-24 02:10:36,582] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-10-24 02:10:36,711] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW8bitKahan
+[2025-10-24 02:10:36,711] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = AdamW8bitKahan
+[2025-10-24 02:10:49,055] [INFO] [logging.py:107:log_dist] [Rank 0] step=1, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 1 loss: 0.1388 iter time (s): 11.335 samples/sec: 0.176
+[2025-10-24 02:10:50,083] [INFO] [logging.py:107:log_dist] [Rank 0] step=2, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 2 loss: 0.1020 iter time (s): 0.828 samples/sec: 2.416
+[2025-10-24 02:10:50,852] [INFO] [logging.py:107:log_dist] [Rank 0] step=3, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 3 loss: 0.2562 iter time (s): 0.689 samples/sec: 2.902
+[2025-10-24 02:10:51,623] [INFO] [logging.py:107:log_dist] [Rank 0] step=4, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 4 loss: 0.1017 iter time (s): 0.702 samples/sec: 2.849
+[2025-10-24 02:10:52,409] [INFO] [logging.py:107:log_dist] [Rank 0] step=5, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 5 loss: 0.2841 iter time (s): 0.707 samples/sec: 2.831
+[2025-10-24 02:10:53,184] [INFO] [logging.py:107:log_dist] [Rank 0] step=6, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 6 loss: 0.1249 iter time (s): 0.694 samples/sec: 2.882
+[2025-10-24 02:10:53,961] [INFO] [logging.py:107:log_dist] [Rank 0] step=7, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 7 loss: 0.0828 iter time (s): 0.702 samples/sec: 2.851
+[2025-10-24 02:10:54,731] [INFO] [logging.py:107:log_dist] [Rank 0] step=8, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 8 loss: 0.0927 iter time (s): 0.702 samples/sec: 2.849
+[2025-10-24 02:10:55,516] [INFO] [logging.py:107:log_dist] [Rank 0] step=9, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 9 loss: 0.1622 iter time (s): 0.720 samples/sec: 2.776
+[2025-10-24 02:10:56,282] [INFO] [logging.py:107:log_dist] [Rank 0] step=10, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 10 loss: 0.1821 iter time (s): 0.704 samples/sec: 2.841
+[2025-10-24 02:10:57,062] [INFO] [logging.py:107:log_dist] [Rank 0] step=11, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 11 loss: 0.1273 iter time (s): 0.709 samples/sec: 2.819
+[2025-10-24 02:10:57,850] [INFO] [logging.py:107:log_dist] [Rank 0] step=12, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 12 loss: 0.0824 iter time (s): 0.711 samples/sec: 2.815
+[2025-10-24 02:10:58,628] [INFO] [logging.py:107:log_dist] [Rank 0] step=13, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 13 loss: 0.1568 iter time (s): 0.698 samples/sec: 2.865
+[2025-10-24 02:10:59,404] [INFO] [logging.py:107:log_dist] [Rank 0] step=14, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 14 loss: 0.1670 iter time (s): 0.699 samples/sec: 2.859
+[2025-10-24 02:11:00,172] [INFO] [logging.py:107:log_dist] [Rank 0] step=15, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 15 loss: 0.0992 iter time (s): 0.703 samples/sec: 2.845
+[2025-10-24 02:11:00,951] [INFO] [logging.py:107:log_dist] [Rank 0] step=16, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 16 loss: 0.0841 iter time (s): 0.704 samples/sec: 2.841
+[2025-10-24 02:11:01,722] [INFO] [logging.py:107:log_dist] [Rank 0] step=17, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 17 loss: 0.1842 iter time (s): 0.692 samples/sec: 2.889
+[2025-10-24 02:11:02,490] [INFO] [logging.py:107:log_dist] [Rank 0] step=18, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 18 loss: 0.1794 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:11:03,278] [INFO] [logging.py:107:log_dist] [Rank 0] step=19, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 19 loss: 0.1793 iter time (s): 0.718 samples/sec: 2.785
+[2025-10-24 02:11:04,057] [INFO] [logging.py:107:log_dist] [Rank 0] step=20, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 20 loss: 0.1061 iter time (s): 0.708 samples/sec: 2.827
+[2025-10-24 02:11:04,835] [INFO] [logging.py:107:log_dist] [Rank 0] step=21, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 21 loss: 0.1448 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:11:05,619] [INFO] [logging.py:107:log_dist] [Rank 0] step=22, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 22 loss: 0.1175 iter time (s): 0.716 samples/sec: 2.792
+[2025-10-24 02:11:06,416] [INFO] [logging.py:107:log_dist] [Rank 0] step=23, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 23 loss: 0.0740 iter time (s): 0.721 samples/sec: 2.772
+[2025-10-24 02:11:07,197] [INFO] [logging.py:107:log_dist] [Rank 0] step=24, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 24 loss: 0.2215 iter time (s): 0.705 samples/sec: 2.839
+[2025-10-24 02:11:07,982] [INFO] [logging.py:107:log_dist] [Rank 0] step=25, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 25 loss: 0.1222 iter time (s): 0.699 samples/sec: 2.860
+[2025-10-24 02:11:08,787] [INFO] [logging.py:107:log_dist] [Rank 0] step=26, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 26 loss: 0.0816 iter time (s): 0.732 samples/sec: 2.731
+[2025-10-24 02:11:09,568] [INFO] [logging.py:107:log_dist] [Rank 0] step=27, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 27 loss: 0.2541 iter time (s): 0.707 samples/sec: 2.830
+[2025-10-24 02:11:10,346] [INFO] [logging.py:107:log_dist] [Rank 0] step=28, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 28 loss: 0.1355 iter time (s): 0.697 samples/sec: 2.868
+[2025-10-24 02:11:11,134] [INFO] [logging.py:107:log_dist] [Rank 0] step=29, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 29 loss: 0.0812 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:11:11,911] [INFO] [logging.py:107:log_dist] [Rank 0] step=30, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 30 loss: 0.0892 iter time (s): 0.701 samples/sec: 2.852
+[2025-10-24 02:11:12,699] [INFO] [logging.py:107:log_dist] [Rank 0] step=31, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 31 loss: 0.1204 iter time (s): 0.719 samples/sec: 2.781
+[2025-10-24 02:11:13,491] [INFO] [logging.py:107:log_dist] [Rank 0] step=32, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 32 loss: 0.0767 iter time (s): 0.711 samples/sec: 2.813
+[2025-10-24 02:11:14,290] [INFO] [logging.py:107:log_dist] [Rank 0] step=33, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 33 loss: 0.1320 iter time (s): 0.726 samples/sec: 2.755
+[2025-10-24 02:11:15,093] [INFO] [logging.py:107:log_dist] [Rank 0] step=34, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 34 loss: 0.1038 iter time (s): 0.730 samples/sec: 2.741
+[2025-10-24 02:11:15,871] [INFO] [logging.py:107:log_dist] [Rank 0] step=35, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 35 loss: 0.0925 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:11:16,653] [INFO] [logging.py:107:log_dist] [Rank 0] step=36, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 36 loss: 0.3470 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:11:17,440] [INFO] [logging.py:107:log_dist] [Rank 0] step=37, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 37 loss: 0.0802 iter time (s): 0.727 samples/sec: 2.751
+[2025-10-24 02:11:18,216] [INFO] [logging.py:107:log_dist] [Rank 0] step=38, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 38 loss: 0.1519 iter time (s): 0.703 samples/sec: 2.843
+[2025-10-24 02:11:19,028] [INFO] [logging.py:107:log_dist] [Rank 0] step=39, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 39 loss: 0.2751 iter time (s): 0.732 samples/sec: 2.733
+[2025-10-24 02:11:19,811] [INFO] [logging.py:107:log_dist] [Rank 0] step=40, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 40 loss: 0.1370 iter time (s): 0.703 samples/sec: 2.846
+[2025-10-24 02:11:20,592] [INFO] [logging.py:107:log_dist] [Rank 0] step=41, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 41 loss: 0.1061 iter time (s): 0.706 samples/sec: 2.834
+[2025-10-24 02:11:21,363] [INFO] [logging.py:107:log_dist] [Rank 0] step=42, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 42 loss: 0.0798 iter time (s): 0.704 samples/sec: 2.841
+[2025-10-24 02:11:22,153] [INFO] [logging.py:107:log_dist] [Rank 0] step=43, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 43 loss: 0.1958 iter time (s): 0.711 samples/sec: 2.813
+[2025-10-24 02:11:22,945] [INFO] [logging.py:107:log_dist] [Rank 0] step=44, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 44 loss: 0.0657 iter time (s): 0.719 samples/sec: 2.783
+[2025-10-24 02:11:23,716] [INFO] [logging.py:107:log_dist] [Rank 0] step=45, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 45 loss: 0.1225 iter time (s): 0.685 samples/sec: 2.921
+[2025-10-24 02:11:24,506] [INFO] [logging.py:107:log_dist] [Rank 0] step=46, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 46 loss: 0.0922 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:11:25,277] [INFO] [logging.py:107:log_dist] [Rank 0] step=47, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 47 loss: 0.1776 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:11:26,050] [INFO] [logging.py:107:log_dist] [Rank 0] step=48, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 48 loss: 0.1008 iter time (s): 0.691 samples/sec: 2.894
+[2025-10-24 02:11:26,836] [INFO] [logging.py:107:log_dist] [Rank 0] step=49, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 49 loss: 0.1709 iter time (s): 0.713 samples/sec: 2.806
+[2025-10-24 02:11:27,615] [INFO] [logging.py:107:log_dist] [Rank 0] step=50, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 50 loss: 0.2309 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:11:28,390] [INFO] [logging.py:107:log_dist] [Rank 0] step=51, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 51 loss: 0.0880 iter time (s): 0.703 samples/sec: 2.844
+[2025-10-24 02:11:29,161] [INFO] [logging.py:107:log_dist] [Rank 0] step=52, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 52 loss: 0.0681 iter time (s): 0.689 samples/sec: 2.901
+[2025-10-24 02:11:29,937] [INFO] [logging.py:107:log_dist] [Rank 0] step=53, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 53 loss: 0.1558 iter time (s): 0.707 samples/sec: 2.829
+[2025-10-24 02:11:30,708] [INFO] [logging.py:107:log_dist] [Rank 0] step=54, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 54 loss: 0.0660 iter time (s): 0.695 samples/sec: 2.878
+[2025-10-24 02:11:31,488] [INFO] [logging.py:107:log_dist] [Rank 0] step=55, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 55 loss: 0.0617 iter time (s): 0.715 samples/sec: 2.796
+[2025-10-24 02:11:32,252] [INFO] [logging.py:107:log_dist] [Rank 0] step=56, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 56 loss: 0.2879 iter time (s): 0.687 samples/sec: 2.912
+[2025-10-24 02:11:33,019] [INFO] [logging.py:107:log_dist] [Rank 0] step=57, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 57 loss: 0.0773 iter time (s): 0.686 samples/sec: 2.917
+[2025-10-24 02:11:33,801] [INFO] [logging.py:107:log_dist] [Rank 0] step=58, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 58 loss: 0.0657 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:11:34,586] [INFO] [logging.py:107:log_dist] [Rank 0] step=59, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 59 loss: 0.0971 iter time (s): 0.717 samples/sec: 2.791
+[2025-10-24 02:11:35,362] [INFO] [logging.py:107:log_dist] [Rank 0] step=60, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 60 loss: 0.0919 iter time (s): 0.715 samples/sec: 2.799
+[2025-10-24 02:11:36,148] [INFO] [logging.py:107:log_dist] [Rank 0] step=61, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 61 loss: 0.0984 iter time (s): 0.719 samples/sec: 2.780
+[2025-10-24 02:11:36,957] [INFO] [logging.py:107:log_dist] [Rank 0] step=62, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 62 loss: 0.1173 iter time (s): 0.739 samples/sec: 2.705
+[2025-10-24 02:11:37,736] [INFO] [logging.py:107:log_dist] [Rank 0] step=63, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 63 loss: 0.0940 iter time (s): 0.703 samples/sec: 2.847
+[2025-10-24 02:11:38,516] [INFO] [logging.py:107:log_dist] [Rank 0] step=64, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 64 loss: 0.0705 iter time (s): 0.712 samples/sec: 2.808
+[2025-10-24 02:11:39,297] [INFO] [logging.py:107:log_dist] [Rank 0] step=65, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 65 loss: 0.0810 iter time (s): 0.709 samples/sec: 2.820
+[2025-10-24 02:11:40,076] [INFO] [logging.py:107:log_dist] [Rank 0] step=66, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 66 loss: 0.0936 iter time (s): 0.702 samples/sec: 2.849
+[2025-10-24 02:11:40,866] [INFO] [logging.py:107:log_dist] [Rank 0] step=67, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 67 loss: 0.0870 iter time (s): 0.715 samples/sec: 2.797
+[2025-10-24 02:11:41,640] [INFO] [logging.py:107:log_dist] [Rank 0] step=68, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 68 loss: 0.0989 iter time (s): 0.700 samples/sec: 2.858
+[2025-10-24 02:11:42,450] [INFO] [logging.py:107:log_dist] [Rank 0] step=69, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 69 loss: 0.0763 iter time (s): 0.736 samples/sec: 2.719
+[2025-10-24 02:11:43,224] [INFO] [logging.py:107:log_dist] [Rank 0] step=70, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 70 loss: 0.0882 iter time (s): 0.698 samples/sec: 2.867
+[2025-10-24 02:11:44,017] [INFO] [logging.py:107:log_dist] [Rank 0] step=71, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 71 loss: 0.1248 iter time (s): 0.717 samples/sec: 2.789
+[2025-10-24 02:11:44,791] [INFO] [logging.py:107:log_dist] [Rank 0] step=72, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 72 loss: 0.1418 iter time (s): 0.696 samples/sec: 2.875
+[2025-10-24 02:11:45,571] [INFO] [logging.py:107:log_dist] [Rank 0] step=73, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 73 loss: 0.1467 iter time (s): 0.712 samples/sec: 2.810
+[2025-10-24 02:11:46,342] [INFO] [logging.py:107:log_dist] [Rank 0] step=74, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 74 loss: 0.0978 iter time (s): 0.703 samples/sec: 2.845
+[2025-10-24 02:11:47,122] [INFO] [logging.py:107:log_dist] [Rank 0] step=75, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 75 loss: 0.0998 iter time (s): 0.713 samples/sec: 2.805
+[2025-10-24 02:11:47,887] [INFO] [logging.py:107:log_dist] [Rank 0] step=76, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 76 loss: 0.1955 iter time (s): 0.692 samples/sec: 2.892
+[2025-10-24 02:11:48,680] [INFO] [logging.py:107:log_dist] [Rank 0] step=77, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 77 loss: 0.0782 iter time (s): 0.712 samples/sec: 2.808
+[2025-10-24 02:11:49,455] [INFO] [logging.py:107:log_dist] [Rank 0] step=78, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 78 loss: 0.0813 iter time (s): 0.704 samples/sec: 2.839
+[2025-10-24 02:11:50,226] [INFO] [logging.py:107:log_dist] [Rank 0] step=79, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 79 loss: 0.2118 iter time (s): 0.703 samples/sec: 2.845
+[2025-10-24 02:11:50,998] [INFO] [logging.py:107:log_dist] [Rank 0] step=80, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 80 loss: 0.1385 iter time (s): 0.708 samples/sec: 2.826
+[2025-10-24 02:11:51,777] [INFO] [logging.py:107:log_dist] [Rank 0] step=81, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 81 loss: 0.3199 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:11:52,544] [INFO] [logging.py:107:log_dist] [Rank 0] step=82, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 82 loss: 0.1563 iter time (s): 0.704 samples/sec: 2.843
+[2025-10-24 02:11:53,323] [INFO] [logging.py:107:log_dist] [Rank 0] step=83, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 83 loss: 0.0849 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:11:54,102] [INFO] [logging.py:107:log_dist] [Rank 0] step=84, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 84 loss: 0.0968 iter time (s): 0.712 samples/sec: 2.809
+[2025-10-24 02:11:54,893] [INFO] [logging.py:107:log_dist] [Rank 0] step=85, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 85 loss: 0.0749 iter time (s): 0.727 samples/sec: 2.751
+[2025-10-24 02:11:55,666] [INFO] [logging.py:107:log_dist] [Rank 0] step=86, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 86 loss: 0.1451 iter time (s): 0.705 samples/sec: 2.837
+[2025-10-24 02:11:56,448] [INFO] [logging.py:107:log_dist] [Rank 0] step=87, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 87 loss: 0.1435 iter time (s): 0.711 samples/sec: 2.814
+[2025-10-24 02:11:57,235] [INFO] [logging.py:107:log_dist] [Rank 0] step=88, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 88 loss: 0.1961 iter time (s): 0.706 samples/sec: 2.834
+[2025-10-24 02:11:58,009] [INFO] [logging.py:107:log_dist] [Rank 0] step=89, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 89 loss: 0.1876 iter time (s): 0.708 samples/sec: 2.825
+[2025-10-24 02:11:58,788] [INFO] [logging.py:107:log_dist] [Rank 0] step=90, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 90 loss: 0.0960 iter time (s): 0.707 samples/sec: 2.829
+[2025-10-24 02:11:59,574] [INFO] [logging.py:107:log_dist] [Rank 0] step=91, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 91 loss: 0.1332 iter time (s): 0.719 samples/sec: 2.781
+[2025-10-24 02:12:00,355] [INFO] [logging.py:107:log_dist] [Rank 0] step=92, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 92 loss: 0.1098 iter time (s): 0.696 samples/sec: 2.874
+[2025-10-24 02:12:01,129] [INFO] [logging.py:107:log_dist] [Rank 0] step=93, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 93 loss: 0.0916 iter time (s): 0.694 samples/sec: 2.880
+[2025-10-24 02:12:01,951] [INFO] [logging.py:107:log_dist] [Rank 0] step=94, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 94 loss: 0.0944 iter time (s): 0.751 samples/sec: 2.662
+[2025-10-24 02:12:02,740] [INFO] [logging.py:107:log_dist] [Rank 0] step=95, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 95 loss: 0.0854 iter time (s): 0.713 samples/sec: 2.805
+[2025-10-24 02:12:03,516] [INFO] [logging.py:107:log_dist] [Rank 0] step=96, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 96 loss: 0.3384 iter time (s): 0.709 samples/sec: 2.823
+[2025-10-24 02:12:04,296] [INFO] [logging.py:107:log_dist] [Rank 0] step=97, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 97 loss: 0.0774 iter time (s): 0.692 samples/sec: 2.889
+[2025-10-24 02:12:05,085] [INFO] [logging.py:107:log_dist] [Rank 0] step=98, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 98 loss: 0.1402 iter time (s): 0.718 samples/sec: 2.787
+[2025-10-24 02:12:05,871] [INFO] [logging.py:107:log_dist] [Rank 0] step=99, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 99 loss: 0.0712 iter time (s): 0.714 samples/sec: 2.802
+[2025-10-24 02:12:06,638] [INFO] [logging.py:107:log_dist] [Rank 0] step=100, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 100 loss: 0.2252 iter time (s): 0.692 samples/sec: 2.888
+[2025-10-24 02:12:07,416] [INFO] [logging.py:107:log_dist] [Rank 0] step=101, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 101 loss: 0.0837 iter time (s): 0.725 samples/sec: 2.757
+[2025-10-24 02:12:08,184] [INFO] [logging.py:107:log_dist] [Rank 0] step=102, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 102 loss: 0.1931 iter time (s): 0.694 samples/sec: 2.881
+[2025-10-24 02:12:08,956] [INFO] [logging.py:107:log_dist] [Rank 0] step=103, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 103 loss: 0.1091 iter time (s): 0.694 samples/sec: 2.881
+[2025-10-24 02:12:09,731] [INFO] [logging.py:107:log_dist] [Rank 0] step=104, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 104 loss: 0.0861 iter time (s): 0.702 samples/sec: 2.851
+[2025-10-24 02:12:10,499] [INFO] [logging.py:107:log_dist] [Rank 0] step=105, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 105 loss: 0.0871 iter time (s): 0.705 samples/sec: 2.837
+[2025-10-24 02:12:11,276] [INFO] [logging.py:107:log_dist] [Rank 0] step=106, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 106 loss: 0.0936 iter time (s): 0.705 samples/sec: 2.835
+[2025-10-24 02:12:12,044] [INFO] [logging.py:107:log_dist] [Rank 0] step=107, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 107 loss: 0.1014 iter time (s): 0.691 samples/sec: 2.893
+[2025-10-24 02:12:12,814] [INFO] [logging.py:107:log_dist] [Rank 0] step=108, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 108 loss: 0.1789 iter time (s): 0.694 samples/sec: 2.881
+[2025-10-24 02:12:13,594] [INFO] [logging.py:107:log_dist] [Rank 0] step=109, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 109 loss: 0.1786 iter time (s): 0.709 samples/sec: 2.820
+[2025-10-24 02:12:14,380] [INFO] [logging.py:107:log_dist] [Rank 0] step=110, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 110 loss: 0.1640 iter time (s): 0.710 samples/sec: 2.818
+[2025-10-24 02:12:15,165] [INFO] [logging.py:107:log_dist] [Rank 0] step=111, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 111 loss: 0.0850 iter time (s): 0.710 samples/sec: 2.818
+[2025-10-24 02:12:15,945] [INFO] [logging.py:107:log_dist] [Rank 0] step=112, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 112 loss: 0.1294 iter time (s): 0.711 samples/sec: 2.814
+[2025-10-24 02:12:16,714] [INFO] [logging.py:107:log_dist] [Rank 0] step=113, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 113 loss: 0.0952 iter time (s): 0.692 samples/sec: 2.892
+[2025-10-24 02:12:17,503] [INFO] [logging.py:107:log_dist] [Rank 0] step=114, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 114 loss: 0.0881 iter time (s): 0.715 samples/sec: 2.795
+[2025-10-24 02:12:18,280] [INFO] [logging.py:107:log_dist] [Rank 0] step=115, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 115 loss: 0.1005 iter time (s): 0.691 samples/sec: 2.895
+[2025-10-24 02:12:19,064] [INFO] [logging.py:107:log_dist] [Rank 0] step=116, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 116 loss: 0.1042 iter time (s): 0.705 samples/sec: 2.839
+[2025-10-24 02:12:19,841] [INFO] [logging.py:107:log_dist] [Rank 0] step=117, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 117 loss: 0.1721 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:12:20,613] [INFO] [logging.py:107:log_dist] [Rank 0] step=118, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 118 loss: 0.0834 iter time (s): 0.699 samples/sec: 2.860
+[2025-10-24 02:12:21,382] [INFO] [logging.py:107:log_dist] [Rank 0] step=119, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 119 loss: 0.0986 iter time (s): 0.700 samples/sec: 2.856
+[2025-10-24 02:12:22,166] [INFO] [logging.py:107:log_dist] [Rank 0] step=120, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 120 loss: 0.0639 iter time (s): 0.719 samples/sec: 2.783
+[2025-10-24 02:12:22,950] [INFO] [logging.py:107:log_dist] [Rank 0] step=121, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 121 loss: 0.0664 iter time (s): 0.705 samples/sec: 2.838
+[2025-10-24 02:12:23,720] [INFO] [logging.py:107:log_dist] [Rank 0] step=122, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 122 loss: 0.0629 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:12:24,498] [INFO] [logging.py:107:log_dist] [Rank 0] step=123, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 123 loss: 0.2414 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:12:25,268] [INFO] [logging.py:107:log_dist] [Rank 0] step=124, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 124 loss: 0.0916 iter time (s): 0.690 samples/sec: 2.898
+[2025-10-24 02:12:26,042] [INFO] [logging.py:107:log_dist] [Rank 0] step=125, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 125 loss: 0.1045 iter time (s): 0.697 samples/sec: 2.868
+[2025-10-24 02:12:26,821] [INFO] [logging.py:107:log_dist] [Rank 0] step=126, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 126 loss: 0.1472 iter time (s): 0.690 samples/sec: 2.898
+[2025-10-24 02:12:27,599] [INFO] [logging.py:107:log_dist] [Rank 0] step=127, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 127 loss: 0.0764 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:12:28,366] [INFO] [logging.py:107:log_dist] [Rank 0] step=128, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 128 loss: 0.1086 iter time (s): 0.716 samples/sec: 2.795
+[2025-10-24 02:12:29,141] [INFO] [logging.py:107:log_dist] [Rank 0] step=129, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 129 loss: 0.1250 iter time (s): 0.704 samples/sec: 2.842
+[2025-10-24 02:12:29,930] [INFO] [logging.py:107:log_dist] [Rank 0] step=130, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 130 loss: 0.1350 iter time (s): 0.729 samples/sec: 2.744
+[2025-10-24 02:12:30,701] [INFO] [logging.py:107:log_dist] [Rank 0] step=131, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 131 loss: 0.0911 iter time (s): 0.696 samples/sec: 2.873
+[2025-10-24 02:12:31,474] [INFO] [logging.py:107:log_dist] [Rank 0] step=132, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 132 loss: 0.0954 iter time (s): 0.699 samples/sec: 2.860
+[2025-10-24 02:12:32,244] [INFO] [logging.py:107:log_dist] [Rank 0] step=133, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 133 loss: 0.1835 iter time (s): 0.694 samples/sec: 2.882
+[2025-10-24 02:12:33,022] [INFO] [logging.py:107:log_dist] [Rank 0] step=134, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 134 loss: 0.0885 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:12:33,800] [INFO] [logging.py:107:log_dist] [Rank 0] step=135, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 135 loss: 0.1040 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:12:34,577] [INFO] [logging.py:107:log_dist] [Rank 0] step=136, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 136 loss: 0.1060 iter time (s): 0.700 samples/sec: 2.856
+[2025-10-24 02:12:35,353] [INFO] [logging.py:107:log_dist] [Rank 0] step=137, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 137 loss: 0.0779 iter time (s): 0.698 samples/sec: 2.867
+[2025-10-24 02:12:36,131] [INFO] [logging.py:107:log_dist] [Rank 0] step=138, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 138 loss: 0.0950 iter time (s): 0.710 samples/sec: 2.815
+[2025-10-24 02:12:36,917] [INFO] [logging.py:107:log_dist] [Rank 0] step=139, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 139 loss: 0.2104 iter time (s): 0.721 samples/sec: 2.775
+[2025-10-24 02:12:37,687] [INFO] [logging.py:107:log_dist] [Rank 0] step=140, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 140 loss: 0.0687 iter time (s): 0.696 samples/sec: 2.875
+[2025-10-24 02:12:38,467] [INFO] [logging.py:107:log_dist] [Rank 0] step=141, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 141 loss: 0.0942 iter time (s): 0.709 samples/sec: 2.822
+[2025-10-24 02:12:39,250] [INFO] [logging.py:107:log_dist] [Rank 0] step=142, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 142 loss: 0.0935 iter time (s): 0.709 samples/sec: 2.821
+[2025-10-24 02:12:40,025] [INFO] [logging.py:107:log_dist] [Rank 0] step=143, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 143 loss: 0.2660 iter time (s): 0.703 samples/sec: 2.846
+[2025-10-24 02:12:40,820] [INFO] [logging.py:107:log_dist] [Rank 0] step=144, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 144 loss: 0.1341 iter time (s): 0.718 samples/sec: 2.785
+[2025-10-24 02:12:41,591] [INFO] [logging.py:107:log_dist] [Rank 0] step=145, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 145 loss: 0.1075 iter time (s): 0.701 samples/sec: 2.853
+[2025-10-24 02:12:42,377] [INFO] [logging.py:107:log_dist] [Rank 0] step=146, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 146 loss: 0.1618 iter time (s): 0.721 samples/sec: 2.773
+[2025-10-24 02:12:43,165] [INFO] [logging.py:107:log_dist] [Rank 0] step=147, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 147 loss: 0.1035 iter time (s): 0.703 samples/sec: 2.847
+[2025-10-24 02:12:43,945] [INFO] [logging.py:107:log_dist] [Rank 0] step=148, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 148 loss: 0.1355 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:12:44,720] [INFO] [logging.py:107:log_dist] [Rank 0] step=149, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 149 loss: 0.0786 iter time (s): 0.691 samples/sec: 2.894
+[2025-10-24 02:12:45,521] [INFO] [logging.py:107:log_dist] [Rank 0] step=150, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 150 loss: 0.2270 iter time (s): 0.717 samples/sec: 2.790
+[2025-10-24 02:12:46,300] [INFO] [logging.py:107:log_dist] [Rank 0] step=151, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 151 loss: 0.1176 iter time (s): 0.699 samples/sec: 2.861
+[2025-10-24 02:12:47,076] [INFO] [logging.py:107:log_dist] [Rank 0] step=152, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 152 loss: 0.2040 iter time (s): 0.702 samples/sec: 2.848
+[2025-10-24 02:12:47,861] [INFO] [logging.py:107:log_dist] [Rank 0] step=153, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 153 loss: 0.0885 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:12:48,643] [INFO] [logging.py:107:log_dist] [Rank 0] step=154, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 154 loss: 0.1795 iter time (s): 0.707 samples/sec: 2.828
+[2025-10-24 02:12:49,414] [INFO] [logging.py:107:log_dist] [Rank 0] step=155, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 155 loss: 0.0878 iter time (s): 0.692 samples/sec: 2.890
+[2025-10-24 02:12:50,208] [INFO] [logging.py:107:log_dist] [Rank 0] step=156, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 156 loss: 0.2176 iter time (s): 0.718 samples/sec: 2.787
+[2025-10-24 02:12:50,992] [INFO] [logging.py:107:log_dist] [Rank 0] step=157, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 157 loss: 0.0918 iter time (s): 0.712 samples/sec: 2.810
+[2025-10-24 02:12:51,781] [INFO] [logging.py:107:log_dist] [Rank 0] step=158, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 158 loss: 0.0769 iter time (s): 0.720 samples/sec: 2.777
+[2025-10-24 02:12:52,560] [INFO] [logging.py:107:log_dist] [Rank 0] step=159, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 159 loss: 0.0674 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:12:53,351] [INFO] [logging.py:107:log_dist] [Rank 0] step=160, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 160 loss: 0.4755 iter time (s): 0.713 samples/sec: 2.803
+[2025-10-24 02:12:54,131] [INFO] [logging.py:107:log_dist] [Rank 0] step=161, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 161 loss: 0.0888 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:12:54,919] [INFO] [logging.py:107:log_dist] [Rank 0] step=162, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 162 loss: 0.0878 iter time (s): 0.717 samples/sec: 2.790
+[2025-10-24 02:12:55,706] [INFO] [logging.py:107:log_dist] [Rank 0] step=163, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 163 loss: 0.1009 iter time (s): 0.711 samples/sec: 2.812
+[2025-10-24 02:12:56,478] [INFO] [logging.py:107:log_dist] [Rank 0] step=164, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 164 loss: 0.0646 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:12:57,254] [INFO] [logging.py:107:log_dist] [Rank 0] step=165, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 165 loss: 0.1430 iter time (s): 0.708 samples/sec: 2.823
+[2025-10-24 02:12:58,047] [INFO] [logging.py:107:log_dist] [Rank 0] step=166, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 166 loss: 0.0807 iter time (s): 0.718 samples/sec: 2.785
+[2025-10-24 02:12:58,831] [INFO] [logging.py:107:log_dist] [Rank 0] step=167, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 167 loss: 0.0932 iter time (s): 0.716 samples/sec: 2.793
+[2025-10-24 02:12:59,597] [INFO] [logging.py:107:log_dist] [Rank 0] step=168, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 168 loss: 0.1552 iter time (s): 0.702 samples/sec: 2.849
+[2025-10-24 02:13:00,376] [INFO] [logging.py:107:log_dist] [Rank 0] step=169, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 169 loss: 0.0655 iter time (s): 0.715 samples/sec: 2.797
+[2025-10-24 02:13:01,149] [INFO] [logging.py:107:log_dist] [Rank 0] step=170, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 170 loss: 0.0728 iter time (s): 0.704 samples/sec: 2.841
+[2025-10-24 02:13:01,931] [INFO] [logging.py:107:log_dist] [Rank 0] step=171, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 171 loss: 0.1085 iter time (s): 0.712 samples/sec: 2.810
+[2025-10-24 02:13:02,712] [INFO] [logging.py:107:log_dist] [Rank 0] step=172, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 172 loss: 0.1765 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:13:03,499] [INFO] [logging.py:107:log_dist] [Rank 0] step=173, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 173 loss: 0.0750 iter time (s): 0.708 samples/sec: 2.826
+[2025-10-24 02:13:04,273] [INFO] [logging.py:107:log_dist] [Rank 0] step=174, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 174 loss: 0.2768 iter time (s): 0.696 samples/sec: 2.874
+[2025-10-24 02:13:05,052] [INFO] [logging.py:107:log_dist] [Rank 0] step=175, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 175 loss: 0.1761 iter time (s): 0.704 samples/sec: 2.839
+[2025-10-24 02:13:05,837] [INFO] [logging.py:107:log_dist] [Rank 0] step=176, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 176 loss: 0.0775 iter time (s): 0.702 samples/sec: 2.850
+[2025-10-24 02:13:06,612] [INFO] [logging.py:107:log_dist] [Rank 0] step=177, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 177 loss: 0.1390 iter time (s): 0.703 samples/sec: 2.844
+[2025-10-24 02:13:07,398] [INFO] [logging.py:107:log_dist] [Rank 0] step=178, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 178 loss: 0.0919 iter time (s): 0.708 samples/sec: 2.823
+[2025-10-24 02:13:08,183] [INFO] [logging.py:107:log_dist] [Rank 0] step=179, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 179 loss: 0.0891 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:13:08,978] [INFO] [logging.py:107:log_dist] [Rank 0] step=180, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 180 loss: 0.1026 iter time (s): 0.721 samples/sec: 2.774
+[2025-10-24 02:13:09,795] [INFO] [logging.py:107:log_dist] [Rank 0] step=181, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 181 loss: 0.0606 iter time (s): 0.734 samples/sec: 2.726
+[2025-10-24 02:13:10,582] [INFO] [logging.py:107:log_dist] [Rank 0] step=182, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 182 loss: 0.1086 iter time (s): 0.719 samples/sec: 2.782
+[2025-10-24 02:13:11,361] [INFO] [logging.py:107:log_dist] [Rank 0] step=183, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 183 loss: 0.1643 iter time (s): 0.708 samples/sec: 2.823
+[2025-10-24 02:13:12,135] [INFO] [logging.py:107:log_dist] [Rank 0] step=184, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 184 loss: 0.0741 iter time (s): 0.705 samples/sec: 2.835
+[2025-10-24 02:13:12,908] [INFO] [logging.py:107:log_dist] [Rank 0] step=185, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 185 loss: 0.0752 iter time (s): 0.702 samples/sec: 2.850
+[2025-10-24 02:13:13,679] [INFO] [logging.py:107:log_dist] [Rank 0] step=186, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 186 loss: 0.0837 iter time (s): 0.706 samples/sec: 2.835
+[2025-10-24 02:13:14,466] [INFO] [logging.py:107:log_dist] [Rank 0] step=187, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 187 loss: 0.2496 iter time (s): 0.706 samples/sec: 2.835
+[2025-10-24 02:13:15,245] [INFO] [logging.py:107:log_dist] [Rank 0] step=188, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 188 loss: 0.0826 iter time (s): 0.712 samples/sec: 2.811
+[2025-10-24 02:13:16,029] [INFO] [logging.py:107:log_dist] [Rank 0] step=189, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 189 loss: 0.0868 iter time (s): 0.710 samples/sec: 2.818
+[2025-10-24 02:13:16,800] [INFO] [logging.py:107:log_dist] [Rank 0] step=190, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 190 loss: 0.0725 iter time (s): 0.709 samples/sec: 2.820
+[2025-10-24 02:13:17,571] [INFO] [logging.py:107:log_dist] [Rank 0] step=191, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 191 loss: 0.1235 iter time (s): 0.699 samples/sec: 2.862
+[2025-10-24 02:13:18,350] [INFO] [logging.py:107:log_dist] [Rank 0] step=192, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 192 loss: 0.0712 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:13:19,124] [INFO] [logging.py:107:log_dist] [Rank 0] step=193, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 193 loss: 0.0892 iter time (s): 0.696 samples/sec: 2.873
+[2025-10-24 02:13:19,900] [INFO] [logging.py:107:log_dist] [Rank 0] step=194, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 194 loss: 0.0861 iter time (s): 0.707 samples/sec: 2.830
+[2025-10-24 02:13:20,681] [INFO] [logging.py:107:log_dist] [Rank 0] step=195, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 195 loss: 0.0691 iter time (s): 0.711 samples/sec: 2.813
+[2025-10-24 02:13:21,451] [INFO] [logging.py:107:log_dist] [Rank 0] step=196, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 196 loss: 0.1549 iter time (s): 0.700 samples/sec: 2.856
+[2025-10-24 02:13:22,224] [INFO] [logging.py:107:log_dist] [Rank 0] step=197, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 197 loss: 0.1014 iter time (s): 0.707 samples/sec: 2.830
+[2025-10-24 02:13:23,014] [INFO] [logging.py:107:log_dist] [Rank 0] step=198, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 198 loss: 0.2130 iter time (s): 0.722 samples/sec: 2.772
+[2025-10-24 02:13:23,796] [INFO] [logging.py:107:log_dist] [Rank 0] step=199, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 199 loss: 0.0727 iter time (s): 0.700 samples/sec: 2.859
+[2025-10-24 02:13:24,571] [INFO] [logging.py:107:log_dist] [Rank 0] step=200, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 200 loss: 0.0601 iter time (s): 0.701 samples/sec: 2.852
+[2025-10-24 02:13:25,352] [INFO] [logging.py:107:log_dist] [Rank 0] step=201, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 201 loss: 0.1987 iter time (s): 0.711 samples/sec: 2.815
+[2025-10-24 02:13:26,140] [INFO] [logging.py:107:log_dist] [Rank 0] step=202, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 202 loss: 0.0916 iter time (s): 0.714 samples/sec: 2.802
+[2025-10-24 02:13:26,921] [INFO] [logging.py:107:log_dist] [Rank 0] step=203, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 203 loss: 0.0763 iter time (s): 0.714 samples/sec: 2.801
+[2025-10-24 02:13:27,699] [INFO] [logging.py:107:log_dist] [Rank 0] step=204, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 204 loss: 0.0965 iter time (s): 0.711 samples/sec: 2.815
+[2025-10-24 02:13:28,480] [INFO] [logging.py:107:log_dist] [Rank 0] step=205, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 205 loss: 0.1179 iter time (s): 0.716 samples/sec: 2.793
+[2025-10-24 02:13:29,267] [INFO] [logging.py:107:log_dist] [Rank 0] step=206, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 206 loss: 0.0869 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:13:30,055] [INFO] [logging.py:107:log_dist] [Rank 0] step=207, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 207 loss: 0.2250 iter time (s): 0.717 samples/sec: 2.791
+[2025-10-24 02:13:30,857] [INFO] [logging.py:107:log_dist] [Rank 0] step=208, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 208 loss: 0.1172 iter time (s): 0.727 samples/sec: 2.752
+[2025-10-24 02:13:31,633] [INFO] [logging.py:107:log_dist] [Rank 0] step=209, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 209 loss: 0.1046 iter time (s): 0.696 samples/sec: 2.875
+[2025-10-24 02:13:32,411] [INFO] [logging.py:107:log_dist] [Rank 0] step=210, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 210 loss: 0.0959 iter time (s): 0.707 samples/sec: 2.828
+[2025-10-24 02:13:33,194] [INFO] [logging.py:107:log_dist] [Rank 0] step=211, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 211 loss: 0.0744 iter time (s): 0.708 samples/sec: 2.826
+[2025-10-24 02:13:33,983] [INFO] [logging.py:107:log_dist] [Rank 0] step=212, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 212 loss: 0.1365 iter time (s): 0.712 samples/sec: 2.808
+[2025-10-24 02:13:34,765] [INFO] [logging.py:107:log_dist] [Rank 0] step=213, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 213 loss: 0.1839 iter time (s): 0.723 samples/sec: 2.766
+[2025-10-24 02:13:35,553] [INFO] [logging.py:107:log_dist] [Rank 0] step=214, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 214 loss: 0.0756 iter time (s): 0.707 samples/sec: 2.828
+[2025-10-24 02:13:36,331] [INFO] [logging.py:107:log_dist] [Rank 0] step=215, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 215 loss: 0.0642 iter time (s): 0.705 samples/sec: 2.838
+[2025-10-24 02:13:37,121] [INFO] [logging.py:107:log_dist] [Rank 0] step=216, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 216 loss: 0.1858 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:13:37,898] [INFO] [logging.py:107:log_dist] [Rank 0] step=217, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 217 loss: 0.1271 iter time (s): 0.711 samples/sec: 2.815
+[2025-10-24 02:13:38,671] [INFO] [logging.py:107:log_dist] [Rank 0] step=218, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 218 loss: 0.1758 iter time (s): 0.696 samples/sec: 2.875
+[2025-10-24 02:13:39,454] [INFO] [logging.py:107:log_dist] [Rank 0] step=219, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 219 loss: 0.0822 iter time (s): 0.707 samples/sec: 2.828
+[2025-10-24 02:13:40,239] [INFO] [logging.py:107:log_dist] [Rank 0] step=220, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 220 loss: 0.2811 iter time (s): 0.716 samples/sec: 2.794
+[2025-10-24 02:13:41,013] [INFO] [logging.py:107:log_dist] [Rank 0] step=221, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 221 loss: 0.1505 iter time (s): 0.691 samples/sec: 2.896
+[2025-10-24 02:13:41,795] [INFO] [logging.py:107:log_dist] [Rank 0] step=222, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 222 loss: 0.1153 iter time (s): 0.715 samples/sec: 2.796
+[2025-10-24 02:13:42,573] [INFO] [logging.py:107:log_dist] [Rank 0] step=223, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 223 loss: 0.0629 iter time (s): 0.703 samples/sec: 2.844
+[2025-10-24 02:13:43,356] [INFO] [logging.py:107:log_dist] [Rank 0] step=224, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 224 loss: 0.0731 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:13:44,146] [INFO] [logging.py:107:log_dist] [Rank 0] step=225, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 225 loss: 0.0857 iter time (s): 0.717 samples/sec: 2.791
+[2025-10-24 02:13:44,926] [INFO] [logging.py:107:log_dist] [Rank 0] step=226, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 226 loss: 0.1005 iter time (s): 0.718 samples/sec: 2.786
+[2025-10-24 02:13:45,700] [INFO] [logging.py:107:log_dist] [Rank 0] step=227, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 227 loss: 0.1811 iter time (s): 0.703 samples/sec: 2.846
+[2025-10-24 02:13:46,481] [INFO] [logging.py:107:log_dist] [Rank 0] step=228, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 228 loss: 0.0867 iter time (s): 0.712 samples/sec: 2.809
+[2025-10-24 02:13:47,258] [INFO] [logging.py:107:log_dist] [Rank 0] step=229, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 229 loss: 0.1068 iter time (s): 0.694 samples/sec: 2.880
+[2025-10-24 02:13:48,033] [INFO] [logging.py:107:log_dist] [Rank 0] step=230, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 230 loss: 0.0961 iter time (s): 0.707 samples/sec: 2.830
+[2025-10-24 02:13:48,810] [INFO] [logging.py:107:log_dist] [Rank 0] step=231, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 231 loss: 0.1334 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:13:49,584] [INFO] [logging.py:107:log_dist] [Rank 0] step=232, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 232 loss: 0.1477 iter time (s): 0.703 samples/sec: 2.845
+[2025-10-24 02:13:50,352] [INFO] [logging.py:107:log_dist] [Rank 0] step=233, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 233 loss: 0.0913 iter time (s): 0.692 samples/sec: 2.891
+[2025-10-24 02:13:51,128] [INFO] [logging.py:107:log_dist] [Rank 0] step=234, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 234 loss: 0.0858 iter time (s): 0.706 samples/sec: 2.831
+[2025-10-24 02:13:51,901] [INFO] [logging.py:107:log_dist] [Rank 0] step=235, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 235 loss: 0.1147 iter time (s): 0.708 samples/sec: 2.826
+[2025-10-24 02:13:52,679] [INFO] [logging.py:107:log_dist] [Rank 0] step=236, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 236 loss: 0.0811 iter time (s): 0.703 samples/sec: 2.847
+[2025-10-24 02:13:53,471] [INFO] [logging.py:107:log_dist] [Rank 0] step=237, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 237 loss: 0.1219 iter time (s): 0.719 samples/sec: 2.783
+[2025-10-24 02:13:54,267] [INFO] [logging.py:107:log_dist] [Rank 0] step=238, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 238 loss: 0.1484 iter time (s): 0.716 samples/sec: 2.793
+[2025-10-24 02:13:55,056] [INFO] [logging.py:107:log_dist] [Rank 0] step=239, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 239 loss: 0.1407 iter time (s): 0.718 samples/sec: 2.784
+[2025-10-24 02:13:55,831] [INFO] [logging.py:107:log_dist] [Rank 0] step=240, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 240 loss: 0.1429 iter time (s): 0.706 samples/sec: 2.833
+[2025-10-24 02:13:56,605] [INFO] [logging.py:107:log_dist] [Rank 0] step=241, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 241 loss: 0.1684 iter time (s): 0.689 samples/sec: 2.904
+[2025-10-24 02:13:57,397] [INFO] [logging.py:107:log_dist] [Rank 0] step=242, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 242 loss: 0.1271 iter time (s): 0.721 samples/sec: 2.775
+[2025-10-24 02:13:58,177] [INFO] [logging.py:107:log_dist] [Rank 0] step=243, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 243 loss: 0.0912 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:13:58,961] [INFO] [logging.py:107:log_dist] [Rank 0] step=244, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 244 loss: 0.1310 iter time (s): 0.706 samples/sec: 2.834
+[2025-10-24 02:13:59,760] [INFO] [logging.py:107:log_dist] [Rank 0] step=245, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 245 loss: 0.1040 iter time (s): 0.721 samples/sec: 2.775
+[2025-10-24 02:14:00,552] [INFO] [logging.py:107:log_dist] [Rank 0] step=246, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 246 loss: 0.0832 iter time (s): 0.720 samples/sec: 2.776
+[2025-10-24 02:14:01,321] [INFO] [logging.py:107:log_dist] [Rank 0] step=247, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 247 loss: 0.2629 iter time (s): 0.691 samples/sec: 2.893
+[2025-10-24 02:14:02,086] [INFO] [logging.py:107:log_dist] [Rank 0] step=248, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 248 loss: 0.0987 iter time (s): 0.691 samples/sec: 2.895
+[2025-10-24 02:14:02,877] [INFO] [logging.py:107:log_dist] [Rank 0] step=249, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 249 loss: 0.0758 iter time (s): 0.704 samples/sec: 2.840
+[2025-10-24 02:14:03,652] [INFO] [logging.py:107:log_dist] [Rank 0] step=250, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 250 loss: 0.0992 iter time (s): 0.691 samples/sec: 2.896
+[2025-10-24 02:14:04,424] [INFO] [logging.py:107:log_dist] [Rank 0] step=251, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 251 loss: 0.2013 iter time (s): 0.697 samples/sec: 2.871
+[2025-10-24 02:14:05,205] [INFO] [logging.py:107:log_dist] [Rank 0] step=252, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 252 loss: 0.0931 iter time (s): 0.703 samples/sec: 2.844
+[2025-10-24 02:14:05,980] [INFO] [logging.py:107:log_dist] [Rank 0] step=253, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 253 loss: 0.0826 iter time (s): 0.705 samples/sec: 2.839
+[2025-10-24 02:14:06,749] [INFO] [logging.py:107:log_dist] [Rank 0] step=254, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 254 loss: 0.0949 iter time (s): 0.704 samples/sec: 2.841
+[2025-10-24 02:14:07,533] [INFO] [logging.py:107:log_dist] [Rank 0] step=255, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 255 loss: 0.1552 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:14:08,315] [INFO] [logging.py:107:log_dist] [Rank 0] step=256, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 256 loss: 0.0837 iter time (s): 0.703 samples/sec: 2.844
+[2025-10-24 02:14:09,088] [INFO] [logging.py:107:log_dist] [Rank 0] step=257, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 257 loss: 0.0720 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:14:09,868] [INFO] [logging.py:107:log_dist] [Rank 0] step=258, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 258 loss: 0.0968 iter time (s): 0.697 samples/sec: 2.869
+[2025-10-24 02:14:10,662] [INFO] [logging.py:107:log_dist] [Rank 0] step=259, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 259 loss: 0.1019 iter time (s): 0.734 samples/sec: 2.726
+[2025-10-24 02:14:11,459] [INFO] [logging.py:107:log_dist] [Rank 0] step=260, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 260 loss: 0.0967 iter time (s): 0.717 samples/sec: 2.790
+[2025-10-24 02:14:12,251] [INFO] [logging.py:107:log_dist] [Rank 0] step=261, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 261 loss: 0.1034 iter time (s): 0.720 samples/sec: 2.778
+[2025-10-24 02:14:13,034] [INFO] [logging.py:107:log_dist] [Rank 0] step=262, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 262 loss: 0.0826 iter time (s): 0.710 samples/sec: 2.819
+[2025-10-24 02:14:13,825] [INFO] [logging.py:107:log_dist] [Rank 0] step=263, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 263 loss: 0.1012 iter time (s): 0.703 samples/sec: 2.845
+[2025-10-24 02:14:14,595] [INFO] [logging.py:107:log_dist] [Rank 0] step=264, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 264 loss: 0.0887 iter time (s): 0.708 samples/sec: 2.826
+[2025-10-24 02:14:15,367] [INFO] [logging.py:107:log_dist] [Rank 0] step=265, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 265 loss: 0.0717 iter time (s): 0.696 samples/sec: 2.873
+[2025-10-24 02:14:16,158] [INFO] [logging.py:107:log_dist] [Rank 0] step=266, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 266 loss: 0.0932 iter time (s): 0.727 samples/sec: 2.750
+[2025-10-24 02:14:16,934] [INFO] [logging.py:107:log_dist] [Rank 0] step=267, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 267 loss: 0.0952 iter time (s): 0.695 samples/sec: 2.876
+[2025-10-24 02:14:17,709] [INFO] [logging.py:107:log_dist] [Rank 0] step=268, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 268 loss: 0.1964 iter time (s): 0.705 samples/sec: 2.836
+[2025-10-24 02:14:18,491] [INFO] [logging.py:107:log_dist] [Rank 0] step=269, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 269 loss: 0.2140 iter time (s): 0.702 samples/sec: 2.850
+[2025-10-24 02:14:19,264] [INFO] [logging.py:107:log_dist] [Rank 0] step=270, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 270 loss: 0.0756 iter time (s): 0.702 samples/sec: 2.848
+[2025-10-24 02:14:20,041] [INFO] [logging.py:107:log_dist] [Rank 0] step=271, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 271 loss: 0.1409 iter time (s): 0.708 samples/sec: 2.824
+[2025-10-24 02:14:20,811] [INFO] [logging.py:107:log_dist] [Rank 0] step=272, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 272 loss: 0.0945 iter time (s): 0.705 samples/sec: 2.835
+[2025-10-24 02:14:21,591] [INFO] [logging.py:107:log_dist] [Rank 0] step=273, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 273 loss: 0.0783 iter time (s): 0.702 samples/sec: 2.849
+[2025-10-24 02:14:22,380] [INFO] [logging.py:107:log_dist] [Rank 0] step=274, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 274 loss: 0.0749 iter time (s): 0.727 samples/sec: 2.753
+[2025-10-24 02:14:23,160] [INFO] [logging.py:107:log_dist] [Rank 0] step=275, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 275 loss: 0.0603 iter time (s): 0.714 samples/sec: 2.802
+[2025-10-24 02:14:23,965] [INFO] [logging.py:107:log_dist] [Rank 0] step=276, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 276 loss: 0.1742 iter time (s): 0.738 samples/sec: 2.708
+[2025-10-24 02:14:24,753] [INFO] [logging.py:107:log_dist] [Rank 0] step=277, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 277 loss: 0.0915 iter time (s): 0.705 samples/sec: 2.839
+[2025-10-24 02:14:25,531] [INFO] [logging.py:107:log_dist] [Rank 0] step=278, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 278 loss: 0.2192 iter time (s): 0.713 samples/sec: 2.805
+[2025-10-24 02:14:26,306] [INFO] [logging.py:107:log_dist] [Rank 0] step=279, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 279 loss: 0.0962 iter time (s): 0.694 samples/sec: 2.881
+[2025-10-24 02:14:27,079] [INFO] [logging.py:107:log_dist] [Rank 0] step=280, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 280 loss: 0.0699 iter time (s): 0.704 samples/sec: 2.839
+[2025-10-24 02:14:27,852] [INFO] [logging.py:107:log_dist] [Rank 0] step=281, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 281 loss: 0.0829 iter time (s): 0.706 samples/sec: 2.832
+[2025-10-24 02:14:28,631] [INFO] [logging.py:107:log_dist] [Rank 0] step=282, skipped=0, lr=[2e-05], mom=[[0.9, 0.99]]
+steps: 282 loss: 0.1455 iter time (s): 0.705 samples/sec: 2.838

@@ -1,0 +1,6 @@
+A boy is sitting.
+class=Sitting
+frames=61
+steps=32
+guidance=6.0
+size=832x480

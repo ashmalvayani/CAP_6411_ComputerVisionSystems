@@ -1,0 +1,6 @@
+a commuter claps hands a few times while standing beside a row of trees, in the afternoon. handheld eye-level shot, subtle background motion. High quality, realistic motion, 24 fps, (take 6)
+class=Clapping
+frames=61
+steps=32
+guidance=6.0
+size=832x480

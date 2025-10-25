@@ -1,0 +1,6 @@
+a teenager walks while looking at a phone in one hand on a pedestrian plaza, at noon. slight side-angle tracking shot, soft shadows. High quality, realistic motion, 24 fps, (take 6)
+class=Walking While Using Phone
+frames=61
+steps=32
+guidance=6.0
+size=832x480

@@ -1,0 +1,6 @@
+a shopper walks forward at a normal pace on a city sidewalk, at golden hour. front-facing tracking shot, subtle background motion. High quality, realistic motion, 24 fps, (take 9)
+class=Walking
+frames=61
+steps=32
+guidance=6.0
+size=832x480
