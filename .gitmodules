@@ -1,3 +1,6 @@
 [submodule "Assignments/Assignment_5/Code/InternVL"]
 	path = Assignments/Assignment_5/Code/InternVL
 	url = https://github.com/OpenGVLab/InternVL.git
+[submodule "Assignments/Assignment_9/Ashmal_Vayani_CVS_Assignment9/Code/Wan2.1"]
+	path = Assignments/Assignment_9/Ashmal_Vayani_CVS_Assignment9/Code/Wan2.1
+	url = https://github.com/Wan-Video/Wan2.1
