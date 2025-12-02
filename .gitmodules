@@ -4,3 +4,6 @@
 [submodule "Assignments/Assignment_9/Ashmal_Vayani_CVS_Assignment9/Code/Wan2.1"]
 	path = Assignments/Assignment_9/Ashmal_Vayani_CVS_Assignment9/Code/Wan2.1
 	url = https://github.com/Wan-Video/Wan2.1
+[submodule "Assignments/Assignment_10/Code/TDM"]
+	path = Assignments/Assignment_10/Code/TDM
+	url = https://github.com/Luo-Yihong/TDM
